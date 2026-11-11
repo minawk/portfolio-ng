@@ -1,12 +1,11 @@
+import { AngularAppEngine, createRequestHandler } from '@angular/ssr';
 import {
-  AngularNodeAppEngine,
-  createNodeRequestHandler,
-  isMainModule,
-  writeResponseToNodeResponse,
-} from '@angular/ssr/node';
+  getAllowedHosts,
+  getContext,
+  getTrustProxyHeaders,
+} from '@netlify/angular-runtime/app-engine.js';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import express, { type ErrorRequestHandler } from 'express';
 import { readContactMessage } from './server/mail/contact-message';
 import { readMailSettings } from './server/mail/mail-settings';
 import { sendContactMail } from './server/mail/send-contact-mail';
@@ -16,25 +15,53 @@ if (existsSync(envFile)) {
   process.loadEnvFile(envFile);
 }
 
-const browserDistFolder = join(import.meta.dirname, '../browser');
-const app = express();
-app.set('trust proxy', 1);
-const angularApp = new AngularNodeAppEngine({
-  trustProxyHeaders: true,
+const angularAppEngine = new AngularAppEngine({
+  allowedHosts: [
+    'localhost',
+    '*.netlify.app',
+    '*.minawk.dev',
+    'minawk.dev',
+    ...(process.env['NETLIFY'] ? getAllowedHosts() : []),
+  ],
+  trustProxyHeaders: getTrustProxyHeaders(),
 });
 
-app.use(express.json({ limit: '20kb' }));
+export async function netlifyAppEngineHandler(request: Request): Promise<Response> {
+  const context = getContext();
+  const { pathname } = new URL(request.url);
 
-app.post('/api/contact', async (req, res) => {
-  const message = readContactMessage(req.body);
+  if (pathname === '/api/contact') {
+    return contactResponse(request);
+  }
+
+  const result = await angularAppEngine.handle(request, context);
+  return result || new Response('Not found', { status: 404 });
+}
+
+/**
+ * The request handler used by the Angular CLI (dev-server and during build).
+ */
+export const reqHandler = createRequestHandler(netlifyAppEngineHandler);
+
+async function contactResponse(request: Request): Promise<Response> {
+  if (request.method !== 'POST') {
+    return new Response(null, { status: 405 });
+  }
+
+  let body: unknown;
+  try {
+    body = await request.json();
+  } catch {
+    return Response.json({ ok: false }, { status: 400 });
+  }
+
+  const message = readContactMessage(body);
   if (!message) {
-    res.status(400).json({ ok: false });
-    return;
+    return Response.json({ ok: false }, { status: 400 });
   }
 
   if (!readMailSettings(process.env)) {
-    res.status(503).json({ ok: false });
-    return;
+    return Response.json({ ok: false }, { status: 503 });
   }
 
   try {
@@ -43,77 +70,8 @@ app.post('/api/contact', async (req, res) => {
     const code =
       typeof error === 'object' && error !== null && 'code' in error ? String(error.code) : 'error';
     console.error(`Contact mail failed: ${code}`);
-    res.status(502).json({ ok: false });
-    return;
+    return Response.json({ ok: false }, { status: 502 });
   }
 
-  res.status(204).end();
-});
-
-const rejectBadContactBody: ErrorRequestHandler = (_error, req, res, next) => {
-  if (req.path === '/api/contact') {
-    res.status(400).json({ ok: false });
-    return;
-  }
-
-  next(_error);
-};
-
-app.use(rejectBadContactBody);
-
-app.use(
-  express.static(browserDistFolder, {
-    maxAge: '1y',
-    index: false,
-    redirect: false,
-  }),
-);
-
-app.use((req, res, next) => {
-  angularApp
-    .handle(req)
-    .then(async (response) => {
-      if (!response) {
-        next();
-        return;
-      }
-
-      const contentType = response.headers.get('content-type') ?? '';
-      if (!contentType.includes('text/html')) {
-        writeResponseToNodeResponse(response, res);
-        return;
-      }
-
-      const origin = `${req.protocol}://${req.get('host')}`;
-      const html = withAbsoluteLanguageLinks(await response.text(), origin);
-      res.status(response.status);
-      response.headers.forEach((value, key) => {
-        if (key.toLowerCase() === 'content-length') {
-          return;
-        }
-        res.setHeader(key, value);
-      });
-      res.send(html);
-    })
-    .catch(next);
-});
-
-if (isMainModule(import.meta.url) || process.env['pm_id']) {
-  const port = process.env['PORT'] || 4000;
-  app.listen(port, (error) => {
-    if (error) {
-      throw error;
-    }
-
-    console.log(`Node Express server listening on http://localhost:${port}`);
-  });
-}
-
-export const reqHandler = createNodeRequestHandler(app);
-
-function withAbsoluteLanguageLinks(html: string, origin: string): string {
-  return html.replace(
-    /(<link rel="alternate" hreflang="(?:fr|en|x-default)" href=")(\/(?:en\/)?)(")/g,
-    (_match, start: string, href: string, end: string) => `${start}${origin}${href}${end}`,
-  );
+  return new Response(null, { status: 204 });
 }

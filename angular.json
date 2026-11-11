@@ -50,13 +50,7 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
-              "allowedHosts": [
-                "localhost",
-                "*.onrender.com",
-                "*.netlify.app",
-                "*.minawk.dev",
-                "minawk.dev"
-              ]
+              "allowedHosts": ["localhost", "*.netlify.app", "*.minawk.dev", "minawk.dev"]
             },
             "ssr": {
               "entry": "src/server.ts"
