@@ -50,6 +50,194 @@
           <context context-type="linenumber">7,10</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="experienceTitle" datatype="html">
+        <source>Expérience</source>
+        <target>Experience</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFullstackTitle" datatype="html">
+        <source> Développeur fullstack chez Neoshore Madagascar </source>
+        <target>Fullstack developer at Neoshore Madagascar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFullstackPeriod" datatype="html">
+        <source>Janvier 2024</source>
+        <target>January 2024</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFullstackPlanning" datatype="html">
+        <source> Développement application web pour gestion de planning </source>
+        <target>Development of a web application for schedule management</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFullstackApi" datatype="html">
+        <source> Conception et développement des API microservices </source>
+        <target>Design and development of microservice APIs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">14,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceTechnologies" datatype="html">
+        <source>Technologies :</source>
+        <target>Technologies:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">91,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceReferences" datatype="html">
+        <source>Références :</source>
+        <target>References:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFrontendTitle" datatype="html">
+        <source> Développeur frontend Angular/Ionic chez Neoshore Madagascar </source>
+        <target>Frontend Angular/Ionic developer at Neoshore Madagascar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFrontendPeriod" datatype="html">
+        <source>Juin 2023 - Decembre 2024</source>
+        <target>June 2023 - December 2024</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFrontendApp" datatype="html">
+        <source> Développement application hybride web et mobile pour gestion de planning </source>
+        <target>Development of a hybrid web and mobile application for schedule management</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFrontendMigration" datatype="html">
+        <source> Migration application en Angular vers Vue.js </source>
+        <target>Migration of the application from Angular to Vue.js</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">37,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceSferTitle" datatype="html">
+        <source> Développeur fullstack Angular/Node.js chez SFER / FINAMAD, Madagascar </source>
+        <target>Fullstack Angular/Node.js developer at SFER / FINAMAD, Madagascar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">51,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceSferPeriod" datatype="html">
+        <source>Juin 2022 - Juin 2023</source>
+        <target>June 2022 - June 2023</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceSferSales" datatype="html">
+        <source> Développement application web pour une vente de produit photovoltaïque </source>
+        <target>Development of a web application for photovoltaic product sales</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceSferApi" datatype="html">
+        <source>Conception et développement des API</source>
+        <target>Design and development of the APIs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">58,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceIngenosyaTitle" datatype="html">
+        <source> Stagiaire développeur mobile Ionic chez Ingenosya, Madagascar </source>
+        <target>Mobile Ionic developer intern at Ingenosya, Madagascar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">67,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceIngenosyaPeriod" datatype="html">
+        <source>Novembre 2019 - Avril 2020</source>
+        <target>November 2019 - April 2020</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">69,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceIngenosyaApp" datatype="html">
+        <source> Développement application mobile pour une gestion de station service </source>
+        <target>Development of a mobile application for gas station management</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">72,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceBionexxTitle" datatype="html">
+        <source> Stagiaire développeur chez Bionexx Fianarantsoa, Madagascar </source>
+        <target>Developer intern at Bionexx Fianarantsoa, Madagascar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">82,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceBionexxPeriod" datatype="html">
+        <source>Novembre 2018 - Janvier 2019</source>
+        <target>November 2018 - January 2019</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">84,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceBionexxApp" datatype="html">
+        <source> Développement application web et mobile de gestion de stock </source>
+        <target>Development of a web and mobile stock management application</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">87,89</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="footerCredit" datatype="html">
         <source>© 2026 Benjamina Randrianasolo</source>
         <target>© 2026 Benjamina Randrianasolo</target>
