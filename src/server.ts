@@ -19,7 +19,9 @@ if (existsSync(envFile)) {
 const browserDistFolder = join(import.meta.dirname, '../browser');
 const app = express();
 app.set('trust proxy', 1);
-const angularApp = new AngularNodeAppEngine();
+const angularApp = new AngularNodeAppEngine({
+  trustProxyHeaders: true,
+});
 const recentSends = new Map<string, number[]>();
 const sendWindowMs = 10 * 60 * 1000;
 const maxSends = 5;
