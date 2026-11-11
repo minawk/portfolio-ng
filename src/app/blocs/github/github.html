@@ -1,0 +1,21 @@
+<section class="github" id="github">
+  <div>
+    <h2 i18n="@@githubTitle">Derniers dépôts</h2>
+    <a href="https://github.com/minawk" i18n="@@githubProfile">Voir GitHub</a>
+  </div>
+  @if (repositories.error()) {
+    <p i18n="@@githubUnavailable">Les dépôts GitHub sont indisponibles pour le moment.</p>
+  } @else if (repositories.hasValue()) {
+    <ul>
+      @for (repository of repositories.value(); track repository.name) {
+        <li>
+          <h3>{{ repository.name }}</h3>
+          @if (repository.description) {
+            <p>{{ repository.description }}</p>
+          }
+          <a [href]="repository.url" i18n="@@githubRepository">Voir le dépôt</a>
+        </li>
+      }
+    </ul>
+  }
+</section>

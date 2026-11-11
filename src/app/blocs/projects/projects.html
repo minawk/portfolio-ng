@@ -1,0 +1,58 @@
+<section class="projects" id="projects">
+  <h2 i18n="@@projectsTitle">Projets</h2>
+  <h3 i18n="@@projectsClientTitle">Projets clients</h3>
+  <ul class="clients">
+    <li>
+      <article>
+        <p>Neoshore Madagascar</p>
+        <h4 i18n="@@projectPlanningWeb">Application web de gestion de planning</h4>
+        <p>
+          <a href="https://pro.ooviiz.com">pro.ooviiz.com</a>,
+          <a href="https://thegreenshot.io">thegreenshot.io</a>
+        </p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <p>Neoshore Madagascar</p>
+        <h4 i18n="@@projectPlanningHybrid">
+          Application hybride web et mobile de gestion de planning
+        </h4>
+        <p>
+          <a href="https://app.ooviiz.com">app.ooviiz.com</a>
+        </p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <p>SFER / FINAMAD</p>
+        <h4 i18n="@@projectPhotovoltaic">
+          Application web pour une vente de produit photovoltaïque
+        </h4>
+      </article>
+    </li>
+    <li>
+      <article>
+        <p>Ingenosya</p>
+        <h4 i18n="@@projectGasStation">Application mobile pour une gestion de station service</h4>
+      </article>
+    </li>
+    <li>
+      <article>
+        <p>Bionexx Fianarantsoa</p>
+        <h4 i18n="@@projectStock">Application web et mobile de gestion de stock</h4>
+      </article>
+    </li>
+  </ul>
+  <h3 i18n="@@projectsPersonalTitle">Projets personnels</h3>
+  <ul class="personal">
+    @for (project of personalProjects; track project.href) {
+      <li>
+        <a [href]="project.href">
+          <img [ngSrc]="project.image" [width]="project.width" [height]="project.height" alt="" />
+          {{ project.title }}
+        </a>
+      </li>
+    }
+  </ul>
+</section>
