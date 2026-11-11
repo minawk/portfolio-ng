@@ -1,0 +1,12 @@
+<header class="site-header">
+  <a href="#hero">Benjamina Randrianasolo</a>
+  <nav i18n-aria-label="@@primaryNavigation" aria-label="Navigation principale">
+    @for (section of sectionLinks; track section.id) {
+      <a [href]="'#' + section.id">{{ section.label }}</a>
+    }
+  </nav>
+  <div>
+    <app-language-switch />
+    <app-theme-toggle />
+  </div>
+</header>

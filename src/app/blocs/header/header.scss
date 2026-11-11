@@ -1,0 +1,53 @@
+@use 'mixins' as *;
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+
+  @include screen(768px) {
+    padding: 1.25rem 2rem;
+  }
+
+  > a {
+    margin-right: auto;
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+    width: 100%;
+    gap: 0.25rem;
+
+    @include screen(768px) {
+      justify-content: center;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+      padding: 0.25rem 0.5rem;
+      color: var(--color-text);
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+}

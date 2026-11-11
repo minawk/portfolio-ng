@@ -1,13 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
-import { LanguageSwitch } from './components/language-switch/language-switch';
-import { ThemeToggle } from './components/theme-toggle/theme-toggle';
+import { Footer } from './blocs/footer/footer';
+import { Header } from './blocs/header/header';
+import { SkipLink } from './components/skip-link/skip-link';
 
 @Component({
-  imports: [RouterOutlet, LanguageSwitch, ThemeToggle],
+  imports: [RouterOutlet, SkipLink, Header, Footer],
   selector: 'app-root',
-  styleUrl: './app.scss',
   templateUrl: './app.html',
 })
 export class App {
