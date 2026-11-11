@@ -9,6 +9,41 @@
           <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="aboutTitle" datatype="html">
+        <source>À propos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/about/about.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutLocation" datatype="html">
+        <source>Antananarivo, Madagascar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/about/about.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutDesign" datatype="html">
+        <source>Conception d&apos;une application et des bases de données</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/about/about.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutDevelopment" datatype="html">
+        <source>Développement d&apos;une application web</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/about/about.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutProblem" datatype="html">
+        <source>Résolution d&apos;un problème complexe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/about/about.html</context>
+          <context context-type="linenumber">7,10</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="footerCredit" datatype="html">
         <source>© 2026 Benjamina Randrianasolo</source>
         <context-group purpose="location">
@@ -101,10 +136,17 @@
         </context-group>
       </trans-unit>
       <trans-unit id="heroCv" datatype="html">
-        <source>Télécharger le CV</source>
+        <source> Télécharger le CV </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
-          <context context-type="linenumber">14,16</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skillsTitle" datatype="html">
+        <source>Compétences</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/skills/skills.html</context>
+          <context context-type="linenumber">2,4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="languageNavigation" datatype="html">

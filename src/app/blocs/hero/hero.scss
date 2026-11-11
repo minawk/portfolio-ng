@@ -9,16 +9,23 @@
   @include screen(768px) {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 3rem;
   }
 
   img {
-    width: 12.5rem;
-    height: auto;
-    border-radius: 1.25rem;
+    align-self: flex-end;
+    flex-shrink: 0;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    object-fit: cover;
 
     @include screen(768px) {
-      width: 18rem;
+      order: 1;
+      align-self: center;
+      width: 16rem;
+      height: 16rem;
     }
   }
 
