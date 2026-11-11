@@ -365,6 +365,52 @@
           <context context-type="linenumber">15,17</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="languagesTitle" datatype="html">
+        <source>Langues</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/languages/languages.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="languageFrench" datatype="html">
+        <source>Français</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/languages/languages.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="languageProfessional" datatype="html">
+        <source>Niveau professionnel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/languages/languages.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/languages/languages.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="languageEnglish" datatype="html">
+        <source>Anglais</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/languages/languages.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="languageMalagasy" datatype="html">
+        <source>Malgache</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/languages/languages.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="languageNative" datatype="html">
+        <source>Langue maternelle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/languages/languages.html</context>
+          <context context-type="linenumber">14,17</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="projectsTitle" datatype="html">
         <source>Projets</source>
         <context-group purpose="location">
