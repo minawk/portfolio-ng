@@ -82,8 +82,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="contactLead" datatype="html">
-        <source>Un projet une opportunité, ou une mission : écrivez-moi.</source>
-        <target>A project, an opportunity, or a mission: write to me.</target>
+        <source>Un projet, une opportunité ou une mission : écrivez-moi.</source>
+        <target>A project, an opportunity or a mission: write to me.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
           <context context-type="linenumber">4,7</context>
