@@ -1,5 +1,8 @@
-<section class="contact" id="contact">
+<section class="contact reveal" id="contact">
   <h2 i18n="@@contactTitle">Contact</h2>
+  <p class="lead" i18n="@@contactLead">
+    Un projet Angular, une API Nest.js, ou une mission : écrivez-moi.
+  </p>
   <div>
     <ul>
       <li>
@@ -15,7 +18,19 @@
         <a href="https://github.com/minawk">GitHub</a>
       </li>
     </ul>
-    <form novalidate (submit)="send($event)">
+    <form class="card" novalidate (submit)="send($event)">
+      <div class="honeypot" aria-hidden="true" inert>
+        <label for="contact-website">Website</label>
+        <input
+          id="contact-website"
+          type="text"
+          name="website"
+          tabindex="-1"
+          autocomplete="off"
+          [value]="honeypot()"
+          (input)="onHoneypot($event)"
+        />
+      </div>
       <div>
         <label for="contact-name" i18n="@@contactName">Nom</label>
         <input

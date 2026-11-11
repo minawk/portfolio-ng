@@ -1,32 +1,12 @@
 @use 'mixins' as *;
 
 .projects {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  width: 100%;
-  max-width: 64rem;
-  margin-top: 3.5rem;
+  @include section;
 
-  @include screen(768px) {
-    margin-top: 5rem;
-  }
-
-  h2,
   h3,
   h4 {
     margin: 0;
     font-weight: 700;
-  }
-
-  h2 {
-    font-size: 1.375rem;
-    letter-spacing: -0.02em;
-
-    @include screen(768px) {
-      font-size: 1.75rem;
-    }
   }
 
   h3 {

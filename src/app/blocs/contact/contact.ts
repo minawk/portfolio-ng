@@ -22,6 +22,7 @@ export class Contact {
 
   protected readonly sent = signal(false);
   protected readonly sendFailed = signal(false);
+  protected readonly honeypot = signal('');
   protected readonly contactForm = form(this.model, (path) => {
     required(path.name, { message: $localize`:@@contactNameRequired:Indiquez votre nom.` });
     maxLength(path.name, 120, { message: $localize`:@@contactNameTooLong:Le nom est trop long.` });
@@ -40,6 +41,13 @@ export class Contact {
     });
   });
 
+  protected onHoneypot(event: Event): void {
+    const target = event.target;
+    if (target instanceof HTMLInputElement) {
+      this.honeypot.set(target.value);
+    }
+  }
+
   protected send(event: Event): void {
     event.preventDefault();
     this.sent.set(false);
@@ -50,7 +58,10 @@ export class Contact {
         const response = await fetch('/api/contact', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(this.contactForm().value()),
+          body: JSON.stringify({
+            ...this.contactForm().value(),
+            website: this.honeypot(),
+          }),
         });
         if (!response.ok) {
           this.sendFailed.set(true);

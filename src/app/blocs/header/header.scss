@@ -1,25 +1,29 @@
 @use 'mixins' as *;
 
 .site-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem 1rem;
-  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
   border-bottom: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  backdrop-filter: blur(12px);
 
-  @include screen(768px) {
-    padding: 1.25rem 2rem;
+  .shell {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    padding-block: 0.75rem;
   }
 
-  > a {
+  .shell > a {
     margin-right: auto;
     color: inherit;
     font-weight: 700;
     text-decoration: none;
   }
 
-  > div {
+  .controls {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -27,13 +31,18 @@
 
   nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     order: 3;
     width: 100%;
     gap: 0.25rem;
+    overflow-x: auto;
 
     @include screen(768px) {
+      flex: 1;
       justify-content: center;
+      order: 0;
+      width: auto;
+      overflow: visible;
     }
 
     a {

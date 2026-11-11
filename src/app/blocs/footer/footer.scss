@@ -1,12 +1,6 @@
-@use 'mixins' as *;
-
 .site-footer {
-  padding: 1.5rem 1rem 2rem;
+  padding-block: 1.5rem 2rem;
   color: var(--color-text-muted);
-
-  @include screen(768px) {
-    padding-inline: 2rem;
-  }
 
   p {
     margin: 0;

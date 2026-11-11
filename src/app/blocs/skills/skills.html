@@ -1,8 +1,17 @@
-<section class="skills" id="skills">
+<section class="skills reveal" id="skills">
   <h2 i18n="@@skillsTitle">Compétences</h2>
-  <ul>
-    @for (skill of skills; track skill) {
-      <li>{{ skill }}</li>
-    }
-  </ul>
+  <p i18n="@@skillsIntro">Regroupées selon le niveau d'usage.</p>
+  @for (group of groups; track group.title) {
+    <section class="group">
+      <h3>{{ group.title }}</h3>
+      <ul>
+        @for (skill of group.skills; track skill.name) {
+          <li>
+            <app-skill-icon [name]="skill.icon" />
+            <span>{{ skill.name }}</span>
+          </li>
+        }
+      </ul>
+    </section>
+  }
 </section>

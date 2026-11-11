@@ -12,6 +12,11 @@ export function readContactMessage(body: unknown): ContactMessage | null {
   }
 
   const record = body as Record<string, unknown>;
+  const website = record['website'];
+  if (typeof website === 'string' && website.trim().length > 0) {
+    return null;
+  }
+
   const name = cleanLine(record['name'], 120);
   const email = cleanLine(record['email'], 254);
   const message = cleanText(record['message'], 5000);

@@ -10,6 +10,8 @@ export class ThemeToggle {
   private readonly themeService = inject(ThemeService);
 
   protected readonly isDark = computed(() => this.themeService.theme() === 'dark');
+  protected readonly lightLabel = $localize`:@@themeLight:Thème clair`;
+  protected readonly darkLabel = $localize`:@@themeDark:Thème sombre`;
 
   protected toggleTheme(): void {
     this.themeService.toggle();

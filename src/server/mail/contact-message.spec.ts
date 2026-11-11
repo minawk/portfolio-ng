@@ -16,6 +16,17 @@ describe('readContactMessage', () => {
     });
   });
 
+  it('rejects a filled honeypot', () => {
+    expect(
+      readContactMessage({
+        name: 'Aina',
+        email: 'aina@example.com',
+        message: 'Bonjour',
+        website: 'https://spam.example',
+      }),
+    ).toBeNull();
+  });
+
   it('rejects a missing field, a broken email, and a header break', () => {
     expect(readContactMessage({ name: 'Aina', email: 'aina@example.com' })).toBeNull();
     expect(

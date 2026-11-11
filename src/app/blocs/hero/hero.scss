@@ -3,75 +3,111 @@
 .hero {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 2rem;
+  min-height: calc(100dvh - var(--header-height));
+  padding-block: 2rem 3rem;
 
   @include screen(768px) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 4rem;
   }
 
   img {
-    align-self: flex-end;
+    align-self: flex-start;
     flex-shrink: 0;
-    width: 11rem;
-    height: 11rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     object-fit: cover;
 
     @include screen(768px) {
       order: 1;
       align-self: center;
-      width: 16rem;
-      height: 16rem;
+      width: 18rem;
+      height: 18rem;
     }
   }
 
-  div {
+  .copy {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.75rem;
-    max-width: 36rem;
+    gap: 1rem;
+    max-width: 40rem;
   }
 
   h1 {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
 
     @include screen(768px) {
-      font-size: 2.5rem;
+      font-size: 3.75rem;
     }
   }
 
-  p {
+  .role {
     margin: 0;
+    color: var(--color-accent);
+    font-size: 1.125rem;
+    font-weight: 700;
   }
 
-  .role {
-    color: var(--color-accent);
-    font-weight: 700;
+  .copy > p:not(.role) {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+
+  .focus {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.25rem 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--color-accent) 14%, transparent);
+      color: var(--color-accent);
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
   }
 
   a {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     min-height: 2.75rem;
-    margin-top: 0.5rem;
     padding: 0.5rem 1.25rem;
     border-radius: 999px;
-    background: var(--color-accent);
-    color: var(--color-accent-contrast);
     font-weight: 700;
     text-decoration: none;
+  }
 
-    &:hover {
-      text-decoration: underline;
-      text-underline-offset: 0.15em;
-    }
+  .primary {
+    background: var(--color-accent);
+    color: var(--color-accent-contrast);
+  }
+
+  .secondary {
+    border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
+    color: var(--color-text);
   }
 }

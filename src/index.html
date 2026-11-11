@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <script>
+      document.documentElement.classList.add('js');
+
       try {
         const storedTheme = localStorage.getItem('theme');
         const systemTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';

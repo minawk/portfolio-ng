@@ -22,9 +22,6 @@ app.set('trust proxy', 1);
 const angularApp = new AngularNodeAppEngine({
   trustProxyHeaders: true,
 });
-const recentSends = new Map<string, number[]>();
-const sendWindowMs = 10 * 60 * 1000;
-const maxSends = 5;
 
 app.use(express.json({ limit: '20kb' }));
 
@@ -37,12 +34,6 @@ app.post('/api/contact', async (req, res) => {
 
   if (!readMailSettings(process.env)) {
     res.status(503).json({ ok: false });
-    return;
-  }
-
-  const sender = req.ip || 'unknown';
-  if (!allowSend(sender)) {
-    res.status(429).json({ ok: false });
     return;
   }
 
@@ -125,17 +116,4 @@ function withAbsoluteLanguageLinks(html: string, origin: string): string {
     /(<link rel="alternate" hreflang="(?:fr|en|x-default)" href=")(\/(?:en\/)?)(")/g,
     (_match, start: string, href: string, end: string) => `${start}${origin}${href}${end}`,
   );
-}
-
-function allowSend(sender: string): boolean {
-  const now = Date.now();
-  const stamps = (recentSends.get(sender) ?? []).filter((stamp) => now - stamp < sendWindowMs);
-  if (stamps.length >= maxSends) {
-    recentSends.set(sender, stamps);
-    return false;
-  }
-
-  stamps.push(now);
-  recentSends.set(sender, stamps);
-  return true;
 }

@@ -31,10 +31,27 @@ ng generate --help
 To build the project run:
 
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The production build is a static site in `dist/portfolio-ng/browser`, with French at `/` and English at `/en/`. `ng serve` still runs the local server, including `POST /api/contact`.
+
+## Netlify
+
+Connect the repository on Netlify. The site reads [`netlify.toml`](netlify.toml): Node 22, `npm run build`, and publish directory `dist/portfolio-ng/browser`. Pages are served from the CDN. `POST /api/contact` is rewritten to a Node function that sends the message with the existing SMTP settings.
+
+In the Netlify site settings, add these environment variables. Keep the values out of git. `.env` is already ignored.
+
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASS`
+- `CONTACT_TO`
+- `CONTACT_FROM`
+
+A local build leaves the `hreflang` links relative. On Netlify, the build rewrites them to absolute URLs when `DEPLOY_PRIME_URL` or `URL` is set.
+
+If a deployed send times out, Gmail is often refusing the platform address. Point `SMTP_HOST` at a provider that accepts mail from Netlify, or try port `465`.
 
 ## Running unit tests
 

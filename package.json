@@ -8,7 +8,7 @@
     "start": "ng serve",
     "start:en": "ng serve --configuration=en",
     "extract-i18n": "ng extract-i18n --output-path src/locale --out-file messages.xlf",
-    "build": "ng build",
+    "build": "ng build && node scripts/absolute-hreflang.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portfolio-ng": "node dist/portfolio-ng/server/server.mjs"

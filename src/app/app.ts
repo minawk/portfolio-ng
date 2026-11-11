@@ -18,7 +18,7 @@ export class App {
     this.documentTitle.setTitle($localize`:@@pageTitle:Benjamina Randrianasolo - Portfolio`);
     this.meta.updateTag({
       name: 'description',
-      content: $localize`:@@pageDescription:Portfolio de Benjamina Randrianasolo, développeur fullstack JavaScript / TypeScript à Antananarivo.`,
+      content: $localize`:@@pageDescription:Portfolio de Benjamina Randrianasolo, développeur Angular à Antananarivo.`,
     });
   }
 }
