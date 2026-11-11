@@ -51,6 +51,13 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Use the async pipe to handle observables
 - Do not assume globals like (`new Date()`) are available.
 
+## Styling
+
+- Never use "_" symbol on any class names like "my-class__header"
+- Always use the tree or nested syntax with scss (parent/child)
+- Use mobile first method for responsive
+- Use the @screen mixin for responsive purpose
+
 ## Services
 
 - Design services around a single responsibility
