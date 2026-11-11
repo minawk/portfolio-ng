@@ -7,7 +7,15 @@
         <target>Benjamina Randrianasolo - Portfolio</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageDescription" datatype="html">
+        <source>Portfolio de Benjamina Randrianasolo, développeur fullstack JavaScript / TypeScript à Antananarivo.</source>
+        <target>Portfolio of Benjamina Randrianasolo, a fullstack JavaScript / TypeScript developer in Antananarivo.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.ts</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aboutTitle" datatype="html">
@@ -647,7 +655,7 @@
         <target>Language</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/language-switch/language-switch.html</context>
-          <context context-type="linenumber">2,4</context>
+          <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skipToContent" datatype="html">

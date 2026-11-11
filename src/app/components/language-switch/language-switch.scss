@@ -4,6 +4,7 @@
   gap: 0.25rem;
 
   a {
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +18,15 @@
     &[aria-current='page'] {
       background: var(--color-accent);
       color: var(--color-accent-contrast);
+    }
+
+    span {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
     }
   }
 }

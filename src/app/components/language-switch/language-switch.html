@@ -1,20 +1,15 @@
 <nav class="language-switch" i18n-aria-label="@@languageNavigation" aria-label="Langue">
-  <a
-    href="/"
-    hreflang="fr"
-    lang="fr"
-    aria-label="Français"
-    [attr.aria-current]="currentLocale === 'fr' ? 'page' : null"
-  >
+  <a href="/" hreflang="fr" lang="fr" [attr.aria-current]="currentLocale === 'fr' ? 'page' : null">
     FR
+    <span>Français</span>
   </a>
   <a
     href="/en/"
     hreflang="en"
     lang="en"
-    aria-label="English"
     [attr.aria-current]="currentLocale === 'en' ? 'page' : null"
   >
     EN
+    <span>English</span>
   </a>
 </nav>

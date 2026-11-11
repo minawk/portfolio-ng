@@ -18,6 +18,7 @@ if (existsSync(envFile)) {
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
 const app = express();
+app.set('trust proxy', 1);
 const angularApp = new AngularNodeAppEngine();
 const recentSends = new Map<string, number[]>();
 const sendWindowMs = 10 * 60 * 1000;
@@ -78,7 +79,29 @@ app.use(
 app.use((req, res, next) => {
   angularApp
     .handle(req)
-    .then((response) => (response ? writeResponseToNodeResponse(response, res) : next()))
+    .then(async (response) => {
+      if (!response) {
+        next();
+        return;
+      }
+
+      const contentType = response.headers.get('content-type') ?? '';
+      if (!contentType.includes('text/html')) {
+        writeResponseToNodeResponse(response, res);
+        return;
+      }
+
+      const origin = `${req.protocol}://${req.get('host')}`;
+      const html = withAbsoluteLanguageLinks(await response.text(), origin);
+      res.status(response.status);
+      response.headers.forEach((value, key) => {
+        if (key.toLowerCase() === 'content-length') {
+          return;
+        }
+        res.setHeader(key, value);
+      });
+      res.send(html);
+    })
     .catch(next);
 });
 
@@ -94,6 +117,13 @@ if (isMainModule(import.meta.url) || process.env['pm_id']) {
 }
 
 export const reqHandler = createNodeRequestHandler(app);
+
+function withAbsoluteLanguageLinks(html: string, origin: string): string {
+  return html.replace(
+    /(<link rel="alternate" hreflang="(?:fr|en|x-default)" href=")(\/(?:en\/)?)(")/g,
+    (_match, start: string, href: string, end: string) => `${start}${origin}${href}${end}`,
+  );
+}
 
 function allowSend(sender: string): boolean {
   const now = Date.now();
