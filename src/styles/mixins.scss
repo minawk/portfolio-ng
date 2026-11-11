@@ -13,18 +13,17 @@
   font-weight: 700;
   letter-spacing: -0.02em;
 
-  svg {
+  app-icon {
     flex-shrink: 0;
     width: 1.85rem;
     height: 1.85rem;
-    fill: currentColor;
     color: var(--color-accent);
   }
 
   @include screen(768px) {
     font-size: 1.75rem;
 
-    svg {
+    app-icon {
       width: 2.25rem;
       height: 2.25rem;
     }

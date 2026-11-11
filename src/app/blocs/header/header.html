@@ -1,14 +1,39 @@
 <header class="site-header">
   <div class="shell">
-    <a href="#hero">Benjamina Randrianasolo</a>
-    <nav i18n-aria-label="@@primaryNavigation" aria-label="Navigation principale">
+    <a class="brand" href="#hero">Benjamina Randrianasolo</a>
+    <button
+      type="button"
+      class="menu-button"
+      popovertarget="site-menu"
+      [attr.aria-label]="menuOpen() ? closeMenuLabel : openMenuLabel"
+    >
+      @if (menuOpen()) {
+        <app-icon name="close" />
+      } @else {
+        <app-icon name="menu" />
+      }
+    </button>
+    <nav
+      #menu
+      id="site-menu"
+      popover="auto"
+      i18n-aria-label="@@primaryNavigation"
+      aria-label="Navigation principale"
+      (toggle)="onMenuToggle($event)"
+    >
+      <div class="controls">
+        <app-language-switch />
+        <app-theme-toggle />
+      </div>
       @for (section of sectionLinks; track section.id) {
-        <a [href]="'#' + section.id">{{ section.label }}</a>
+        <a
+          [href]="'#' + section.id"
+          [attr.aria-current]="isCurrent(section.id) ? 'true' : null"
+          (click)="closeMenu()"
+        >
+          {{ section.label }}
+        </a>
       }
     </nav>
-    <div class="controls">
-      <app-language-switch />
-      <app-theme-toggle />
-    </div>
   </div>
 </header>

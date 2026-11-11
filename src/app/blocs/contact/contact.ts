@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { email, form, FormField, FormRoot, maxLength, required } from '@angular/forms/signals';
+import { Icon } from '../../components/icon/icon';
 
 interface ContactMessage {
   name: string;
@@ -9,7 +10,7 @@ interface ContactMessage {
 }
 
 @Component({
-  imports: [FormField, FormRoot],
+  imports: [FormField, FormRoot, Icon],
   selector: 'app-contact',
   templateUrl: './contact.html',
   styleUrl: './contact.scss',

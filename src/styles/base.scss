@@ -4,13 +4,12 @@
 :root {
   --page-max: 1400px;
   --page-gutter: 1rem;
-  --header-height: 8.5rem;
+  --header-height: 4.125rem;
 }
 
 @include screen(768px) {
   :root {
     --page-gutter: 2rem;
-    --header-height: 5rem;
   }
 }
 

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { SkillIcon, type SkillIconName } from '../../components/skill-icon/skill-icon';
+import { Icon, type IconName } from '../../components/icon/icon';
 
 interface Skill {
   name: string;
-  icon: SkillIconName;
+  icon: IconName;
 }
 
 interface SkillGroup {
@@ -12,7 +12,7 @@ interface SkillGroup {
 }
 
 @Component({
-  imports: [SkillIcon],
+  imports: [Icon],
   selector: 'app-skills',
   templateUrl: './skills.html',
   styleUrl: './skills.scss',

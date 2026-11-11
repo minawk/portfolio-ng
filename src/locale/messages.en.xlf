@@ -493,6 +493,20 @@
           <context context-type="linenumber">4,5</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="navOpenMenu" datatype="html">
+        <source>Ouvrir le menu</source>
+        <target>Open the menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navCloseMenu" datatype="html">
+        <source>Fermer le menu</source>
+        <target>Close the menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="navHome" datatype="html">
         <source>Accueil</source>
         <target>Home</target>

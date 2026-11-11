@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { Component } from '@angular/core';
+import { Icon } from '../../components/icon/icon';
 
 @Component({
-  imports: [NgOptimizedImage],
+  imports: [Icon, NgOptimizedImage],
   selector: 'app-projects',
   templateUrl: './projects.html',
   styleUrl: './projects.scss',

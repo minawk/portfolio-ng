@@ -1,30 +1,43 @@
 @use 'mixins' as *;
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-  min-height: calc(100dvh - var(--header-height));
-  padding-block: 2rem 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    'identity portrait'
+    'copy copy';
+  align-items: center;
+  align-content: start;
+  gap: 1.25rem 1rem;
+  padding-block: 1.75rem 2.5rem;
 
   @include screen(768px) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
+    grid-template-areas:
+      'identity portrait'
+      'copy portrait';
+    align-content: center;
+    column-gap: 4rem;
+    row-gap: 1rem;
+    min-height: calc(100dvh - var(--header-height));
+    padding-block: 2rem 3rem;
+  }
+
+  .identity {
+    grid-area: identity;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
   }
 
   img {
-    align-self: flex-start;
-    flex-shrink: 0;
-    width: 12rem;
-    height: 12rem;
+    grid-area: portrait;
+    justify-self: end;
+    width: 7.25rem;
+    height: 7.25rem;
     border-radius: 50%;
     object-fit: cover;
 
     @include screen(768px) {
-      order: 1;
       align-self: center;
       width: 18rem;
       height: 18rem;
@@ -32,6 +45,7 @@
   }
 
   .copy {
+    grid-area: copy;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -41,7 +55,7 @@
 
   h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: clamp(1.7rem, 7.5vw, 2.15rem);
     font-weight: 700;
     letter-spacing: -0.03em;
     line-height: 1.05;
@@ -58,20 +72,35 @@
     font-weight: 700;
   }
 
-  .copy > p:not(.role) {
+  .copy > p,
+  .detail {
     margin: 0;
     color: var(--color-text-muted);
     font-size: 1.0625rem;
     line-height: 1.65;
   }
 
+  .detail,
   .focus {
-    display: flex;
+    display: none;
+  }
+
+  .detail {
+    @include screen(768px) {
+      display: block;
+    }
+  }
+
+  .focus {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 0.25rem 0 0;
     padding: 0;
     list-style: none;
+
+    @include screen(768px) {
+      display: flex;
+    }
 
     li {
       padding: 0.3rem 0.75rem;
@@ -113,7 +142,7 @@
       background-color 0.15s ease,
       border-color 0.15s ease;
 
-    svg {
+    app-icon {
       width: 1.15rem;
       height: 1.15rem;
     }

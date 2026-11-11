@@ -71,11 +71,10 @@
       margin-top: 0;
     }
 
-    svg {
+    app-icon {
       flex-shrink: 0;
       width: 1.7rem;
       height: 1.7rem;
-      fill: currentColor;
       color: var(--color-accent);
     }
   }

@@ -81,7 +81,7 @@
     background: color-mix(in srgb, var(--color-accent) 14%, transparent);
     color: var(--color-accent);
 
-    svg {
+    app-icon {
       width: 1.75rem;
       height: 1.75rem;
     }
@@ -132,10 +132,9 @@
         background-color 0.15s ease,
         border-color 0.15s ease;
 
-      svg {
+      app-icon {
         width: 1.7rem;
         height: 1.7rem;
-        fill: currentColor;
       }
 
       &:hover {
@@ -145,7 +144,7 @@
     }
   }
 
-  svg {
+  app-icon {
     flex-shrink: 0;
     width: 1.15rem;
     height: 1.15rem;

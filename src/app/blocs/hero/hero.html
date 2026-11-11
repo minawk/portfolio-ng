@@ -1,12 +1,22 @@
 <section class="hero reveal" id="hero">
-  <div class="copy">
+  <div class="identity">
     <p class="role" i18n="@@heroRole">Développeur Angular</p>
     <h1>Benjamina Randrianasolo</h1>
+  </div>
+  <img
+    ngSrc="portrait.webp"
+    width="640"
+    height="640"
+    priority
+    alt="Portrait de Benjamina Randrianasolo"
+    i18n-alt="@@heroPortraitAlt"
+  />
+  <div class="copy">
     <p i18n="@@heroIntro">
       Je conçois des applications web avec Angular : des interfaces accessibles, une structure facile
       à suivre, et du code pensé pour durer.
     </p>
-    <p i18n="@@heroNest">
+    <p class="detail" i18n="@@heroNest">
       Côté serveur, j'utilise Nest.js. La même architecture qu'Angular, avec des modules,
       l'injection de dépendances et TypeScript, sert des API REST claires.
     </p>
@@ -21,27 +31,10 @@
         href="benjamina-randrianasolo.pdf"
         download="Benjamina-Randrianasolo-CV.pdf"
       >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M12 4v10M8 10l4 4 4-4M6 19h12"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.75"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+        <app-icon name="download" />
         <span i18n="@@heroCv">Télécharger le CV</span>
       </a>
       <a class="secondary" href="#contact" i18n="@@heroContact">Me contacter</a>
     </div>
   </div>
-  <img
-    ngSrc="portrait.webp"
-    width="640"
-    height="640"
-    priority
-    alt="Portrait de Benjamina Randrianasolo"
-    i18n-alt="@@heroPortraitAlt"
-  />
 </section>

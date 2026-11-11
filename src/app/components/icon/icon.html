@@ -1,12 +1,186 @@
-<span aria-hidden="true">
+<svg viewBox="0 0 24 24" aria-hidden="true">
   @switch (name()) {
+    @case ('menu') {
+      <path
+        d="M5 7h14M5 12h14M5 17h14"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+      />
+    }
+    @case ('close') {
+      <path
+        d="M6 6l12 12M18 6 6 18"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+      />
+    }
+    @case ('sun') {
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.75" />
+      <path
+        d="M12 2.5v2.2M12 19.3v2.2M4.8 4.8l1.6 1.6M17.6 17.6l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.8 19.2l1.6-1.6M17.6 6.4l1.6-1.6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+      />
+    }
+    @case ('moon') {
+      <path
+        d="M20.5 14.8A8.2 8.2 0 1 1 9.2 3.5a6.6 6.6 0 0 0 11.3 11.3z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+      />
+    }
+    @case ('download') {
+      <path
+        d="M12 4v10M8 10l4 4 4-4M6 19h12"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    }
+    @case ('mail') {
+      <path
+        d="M4 7h16v10H4V7Zm0 0 8 6 8-6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+      />
+    }
+    @case ('phone') {
+      <path
+        d="M8 4h2.5l1.2 3.2-1.7 1a12 12 0 0 0 5.8 5.8l1-1.7L20 13.5V16a2 2 0 0 1-2 2A14 14 0 0 1 6 6a2 2 0 0 1 2-2Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+      />
+    }
+    @case ('pin') {
+      <path
+        d="M12 21s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+      />
+      <circle cx="12" cy="11" r="1.8" fill="none" stroke="currentColor" stroke-width="1.75" />
+    }
+    @case ('copy') {
+      <rect x="8" y="8" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.75" />
+      <path
+        d="M5 15V6a1 1 0 0 1 1-1h9"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+      />
+    }
+    @case ('send') {
+      <path
+        d="M4 12 20 4l-6 16-2.5-6.5L4 12Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+      />
+    }
+    @case ('spinner') {
+      <circle
+        cx="12"
+        cy="12"
+        r="8"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-dasharray="32 20"
+        stroke-linecap="round"
+      />
+    }
+    @case ('person') {
+      <circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.75" />
+      <path
+        d="M5.2 19.2c.9-3.1 3.3-4.6 6.8-4.6s5.9 1.5 6.8 4.6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+      />
+    }
+    @case ('graduation') {
+      <path
+        d="M3 10 12 6l9 4-9 4-9-4Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M7 12.2v4c0 .5 2.2 2.3 5 2.3s5-1.8 5-2.3v-4"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+      />
+      <path d="M21 10.2V16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+    }
+    @case ('globe') {
+      <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.75" />
+      <path
+        d="M4 12h16M12 4c2.3 2.3 3.4 5 3.4 8s-1.1 5.7-3.4 8c-2.3-2.3-3.4-5-3.4-8s1.1-5.7 3.4-8Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+      />
+    }
+    @case ('grid') {
+      <rect x="3.5" y="3.5" width="7" height="7" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.75" />
+      <rect x="13.5" y="3.5" width="7" height="7" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.75" />
+      <rect x="3.5" y="13.5" width="7" height="7" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.75" />
+      <rect x="13.5" y="13.5" width="7" height="7" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.75" />
+    }
+    @case ('briefcase') {
+      <rect x="3" y="7" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.75" />
+      <path
+        d="M8 7V5.6A1.6 1.6 0 0 1 9.6 4h4.8A1.6 1.6 0 0 1 16 5.6V7M3 12h18"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+      />
+    }
+    @case ('folder') {
+      <path
+        d="M3.5 8.2V18a1.5 1.5 0 0 0 1.5 1.5h14A1.5 1.5 0 0 0 20.5 18V9.2A1.5 1.5 0 0 0 19 7.7h-6.2L10.6 5H5A1.5 1.5 0 0 0 3.5 6.5v1.7Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linejoin="round"
+      />
+    }
+    @case ('github') {
+      <path
+        d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4C24 5.7 18.6.3 12 .3Z"
+      />
+    }
+    @case ('linkedin') {
+      <path
+        d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"
+      />
+    }
     @case ('angular') {
-      <svg viewBox="0 0 24 24">
         <path d="M12 2.2 3.2 20h3.2l1.6-3.6h8l1.6 3.6h3.2L12 2.2Zm0 6.3 2.5 5.6H9.5L12 8.5Z" />
-      </svg>
     }
     @case ('typescript') {
-      <svg viewBox="0 0 24 24">
         <rect
           x="3"
           y="3"
@@ -28,10 +202,8 @@
         >
           TS
         </text>
-      </svg>
     }
     @case ('javascript') {
-      <svg viewBox="0 0 24 24">
         <rect
           x="3"
           y="3"
@@ -53,10 +225,8 @@
         >
           JS
         </text>
-      </svg>
     }
     @case ('git') {
-      <svg viewBox="0 0 24 24">
         <circle cx="6" cy="6" r="2.2" />
         <circle cx="6" cy="18" r="2.2" />
         <circle cx="18" cy="8" r="2.2" />
@@ -67,10 +237,8 @@
           stroke-width="1.75"
           stroke-linecap="round"
         />
-      </svg>
     }
     @case ('html') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M9 7.5 4.5 12 9 16.5M15 7.5 19.5 12 15 16.5"
           fill="none"
@@ -79,10 +247,8 @@
           stroke-linecap="round"
           stroke-linejoin="round"
         />
-      </svg>
     }
     @case ('scss') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M9.2 7c-1.6 0-2.2 1.2-2.2 2.4v1c0 1-.8 1.5-1.6 1.6 0.8 0.1 1.6 0.6 1.6 1.6v1c0 1.2 0.6 2.4 2.2 2.4M14.8 7c1.6 0 2.2 1.2 2.2 2.4v1c0 1 0.8 1.5 1.6 1.6-0.8 0.1-1.6 0.6-1.6 1.6v1c0 1.2-0.6 2.4-2.2 2.4"
           fill="none"
@@ -90,10 +256,8 @@
           stroke-width="1.75"
           stroke-linecap="round"
         />
-      </svg>
     }
     @case ('rest') {
-      <svg viewBox="0 0 24 24">
         <circle cx="6" cy="12" r="2.1" />
         <circle cx="18" cy="7" r="2.1" />
         <circle cx="18" cy="17" r="2.1" />
@@ -104,10 +268,8 @@
           stroke-width="1.75"
           stroke-linecap="round"
         />
-      </svg>
     }
     @case ('nest') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M4 16.5 12 5l8 11.5M7.2 16.5 12 9.2l4.8 7.3"
           fill="none"
@@ -116,10 +278,8 @@
           stroke-linejoin="round"
           stroke-linecap="round"
         />
-      </svg>
     }
     @case ('node') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M12 3 19.5 7.3v9.4L12 21l-7.5-4.3V7.3L12 3Z"
           fill="none"
@@ -127,10 +287,8 @@
           stroke-width="1.75"
           stroke-linejoin="round"
         />
-      </svg>
     }
     @case ('mysql') {
-      <svg viewBox="0 0 24 24">
         <ellipse cx="12" cy="7" rx="6.2" ry="2.4" fill="none" stroke="currentColor" stroke-width="1.75" />
         <path
           d="M5.8 7v10c0 1.4 2.8 2.4 6.2 2.4s6.2-1 6.2-2.4V7M5.8 12c0 1.4 2.8 2.4 6.2 2.4s6.2-1 6.2-2.4"
@@ -138,10 +296,8 @@
           stroke="currentColor"
           stroke-width="1.75"
         />
-      </svg>
     }
     @case ('postgres') {
-      <svg viewBox="0 0 24 24">
         <ellipse cx="12" cy="7" rx="6.2" ry="2.4" fill="none" stroke="currentColor" stroke-width="1.75" />
         <path
           d="M5.8 7v10c0 1.4 2.8 2.4 6.2 2.4s6.2-1 6.2-2.4V7"
@@ -150,10 +306,8 @@
           stroke-width="1.75"
         />
         <circle cx="12" cy="12.2" r="1.2" />
-      </svg>
     }
     @case ('docker') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M3.5 11h3.2v3.2H3.5zM8 11h3.2v3.2H8zM12.5 11H15.7v3.2H12.5zM17 11h3.2v3.2H17zM8 6.8h3.2V10H8z"
           fill="none"
@@ -167,10 +321,8 @@
           stroke-width="1.75"
           stroke-linecap="round"
         />
-      </svg>
     }
     @case ('ionic') {
-      <svg viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.75" />
         <path
           d="M12 11v5.2"
@@ -180,10 +332,8 @@
           stroke-linecap="round"
         />
         <circle cx="12" cy="8.2" r="0.9" stroke="none" />
-      </svg>
     }
     @case ('capacitor') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M4.5 7.5h15M4.5 16.5h15M8 7.5v9M16 7.5v9"
           fill="none"
@@ -191,15 +341,11 @@
           stroke-width="1.75"
           stroke-linecap="round"
         />
-      </svg>
     }
     @case ('vue') {
-      <svg viewBox="0 0 24 24">
         <path d="M3 5.5 12 19 21 5.5h-3.6L12 13.8 6.6 5.5H3Z" />
-      </svg>
     }
     @case ('nuxt') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M12 4 3.5 19h17L12 4Z"
           fill="none"
@@ -208,10 +354,8 @@
           stroke-linejoin="round"
         />
         <path d="M12 10.2 8.6 16h6.8L12 10.2Z" />
-      </svg>
     }
     @case ('socket') {
-      <svg viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.75" />
         <circle cx="9" cy="10" r="1" stroke="none" />
         <circle cx="15" cy="10" r="1" stroke="none" />
@@ -222,10 +366,8 @@
           stroke-width="1.75"
           stroke-linecap="round"
         />
-      </svg>
     }
     @case ('cpp') {
-      <svg viewBox="0 0 24 24">
         <text
           x="12"
           y="16"
@@ -237,10 +379,8 @@
         >
           C++
         </text>
-      </svg>
     }
     @case ('python') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M8.2 3.8h4.8c1.5 0 2.4.8 2.4 2.2V8H8.6c-1.4 0-2.4-1-2.4-2.2V6c0-1.4.8-2.2 2-2.2Z"
           fill="none"
@@ -255,10 +395,8 @@
         />
         <circle cx="9.4" cy="6.2" r="0.7" />
         <circle cx="14.6" cy="17.8" r="0.7" />
-      </svg>
     }
     @case ('sqlite') {
-      <svg viewBox="0 0 24 24">
         <ellipse cx="12" cy="8" rx="5.2" ry="2.1" fill="none" stroke="currentColor" stroke-width="1.75" />
         <path
           d="M6.8 8v7.2c0 1.2 2.3 2.1 5.2 2.1s5.2-.9 5.2-2.1V8"
@@ -273,10 +411,8 @@
           stroke-width="1.75"
           stroke-linecap="round"
         />
-      </svg>
     }
     @case ('mongodb') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M12 3.2c.5 3.4 2.8 5.8 2.8 9.2 0 2.5-1.1 4.6-2.8 6.6-1.7-2-2.8-4.1-2.8-6.6 0-3.4 2.3-5.8 2.8-9.2Z"
           fill="none"
@@ -291,10 +427,8 @@
           stroke-width="1.75"
           stroke-linecap="round"
         />
-      </svg>
     }
     @case ('graphql') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M12 3.2 20 7.6v8.8L12 20.8 4 16.4V7.6L12 3.2Z"
           fill="none"
@@ -309,10 +443,8 @@
           stroke-width="1.75"
           stroke-linejoin="round"
         />
-      </svg>
     }
     @case ('redis') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M12 3.2 20.2 12 12 20.8 3.8 12 12 3.2Z"
           fill="none"
@@ -320,10 +452,8 @@
           stroke-width="1.75"
           stroke-linejoin="round"
         />
-      </svg>
     }
     @case ('linux') {
-      <svg viewBox="0 0 24 24">
         <path
           fill-rule="evenodd"
           d="M12 3.4c1.7 0 2.8 1.3 2.8 2.8 0 .5.2.8.6 1 1.7.9 2.8 2.8 2.8 5 0 3.6-2.5 6.6-6.2 6.6S6 15.8 6 12.2c0-2.2 1.1-4.1 2.8-5 .4-.2.6-.5.6-1 0-1.5 1.1-2.8 2.6-2.8Zm0 6.4c-1.6 0-2.8 1.7-2.8 3.7s1.2 3.7 2.8 3.7 2.8-1.7 2.8-3.7-1.2-3.7-2.8-3.7Z"
@@ -332,10 +462,8 @@
         <circle cx="13.7" cy="9.3" r="0.6" />
         <ellipse cx="7.1" cy="18.8" rx="1.7" ry="0.85" />
         <ellipse cx="16.9" cy="18.8" rx="1.7" ry="0.85" />
-      </svg>
     }
     @case ('uml') {
-      <svg viewBox="0 0 24 24">
         <rect
           x="3"
           y="3.5"
@@ -366,10 +494,8 @@
           stroke-linecap="round"
           stroke-linejoin="round"
         />
-      </svg>
     }
     @case ('agile') {
-      <svg viewBox="0 0 24 24">
         <path
           d="M7.2 8.4a5.2 5.2 0 0 1 8.4-1.5"
           fill="none"
@@ -400,7 +526,6 @@
           stroke-linecap="round"
           stroke-linejoin="round"
         />
-      </svg>
     }
   }
-</span>
+</svg>
