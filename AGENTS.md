@@ -54,7 +54,7 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 ## Styling
 
 - Never use "_" symbol on any class names like "my-class__header"
-- Always use the tree or nested syntax with scss (parent/child)
+- Always use the tree or nested syntax with scss, ex: "a { b {} }", instead of "a {} a b {}"
 - Use mobile first method for responsive
 - Use the @screen mixin for responsive purpose
 - Do not use "_" at the start of the scss file names

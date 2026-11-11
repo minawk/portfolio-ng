@@ -1,0 +1,22 @@
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    border-radius: 999px;
+    color: var(--color-text);
+    font-weight: 700;
+    text-decoration: none;
+
+    &[aria-current='page'] {
+      background: var(--color-accent);
+      color: var(--color-accent-contrast);
+    }
+  }
+}

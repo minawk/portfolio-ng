@@ -1,3 +1,7 @@
 <button type="button" class="theme-toggle" (click)="toggleTheme()" [attr.aria-pressed]="isDark()">
-  {{ label() }}
+  @if (isDark()) {
+    <ng-container i18n="@@themeLight">Thème clair</ng-container>
+  } @else {
+    <ng-container i18n="@@themeDark">Thème sombre</ng-container>
+  }
 </button>

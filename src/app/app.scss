@@ -3,6 +3,8 @@
 .app-bar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
   padding: 1rem;
 
   @include screen(768px) {
