@@ -9,81 +9,109 @@
           <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="languageNavigation" datatype="html">
-        <source>Langue</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/language-switch/language-switch.html</context>
-          <context context-type="linenumber">2,4</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="footerCredit" datatype="html">
         <source>© 2026 Benjamina Randrianasolo</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-footer/site-footer.html</context>
+          <context context-type="sourcefile">src/app/blocs/footer/footer.html</context>
           <context context-type="linenumber">2,4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="primaryNavigation" datatype="html">
         <source>Navigation principale</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.html</context>
+          <context context-type="sourcefile">src/app/blocs/header/header.html</context>
           <context context-type="linenumber">3,4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navHome" datatype="html">
         <source>Accueil</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.ts</context>
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
           <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navAbout" datatype="html">
         <source>À propos</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.ts</context>
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navSkills" datatype="html">
         <source>Compétences</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.ts</context>
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navExperience" datatype="html">
         <source>Expérience</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.ts</context>
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
           <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navEducation" datatype="html">
         <source>Formation</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.ts</context>
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navProjects" datatype="html">
         <source>Projets</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.ts</context>
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navLanguages" datatype="html">
         <source>Langues</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.ts</context>
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navContact" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.ts</context>
+          <context context-type="sourcefile">src/app/blocs/header/header.ts</context>
           <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroPortraitAlt" datatype="html">
+        <source>Portrait de Benjamina Randrianasolo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroRole" datatype="html">
+        <source>Développeur fullstack JavaScript / TypeScript</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroIntro" datatype="html">
+        <source>Je conçois des applications web autour de JavaScript et TypeScript.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroCv" datatype="html">
+        <source>Télécharger le CV</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="languageNavigation" datatype="html">
+        <source>Langue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/language-switch/language-switch.html</context>
+          <context context-type="linenumber">2,4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skipToContent" datatype="html">
