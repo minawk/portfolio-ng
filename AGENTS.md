@@ -57,6 +57,7 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Always use the tree or nested syntax with scss (parent/child)
 - Use mobile first method for responsive
 - Use the @screen mixin for responsive purpose
+- Do not use "_" at the start of the scss file names
 
 ## Services
 
