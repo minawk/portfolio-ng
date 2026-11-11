@@ -1,18 +1,105 @@
 <section class="about reveal" id="about">
-  <h2 i18n="@@aboutTitle">À propos</h2>
-  <p class="location" i18n="@@aboutLocation">Antananarivo, Madagascar</p>
-  <p i18n="@@aboutBio">
-    Je suis développeur Angular. Je construis des interfaces web et des applications hybrides, et je
-    les relie à des API Nest.js conçues avec la même structure : modules, injection de dépendances et
-    TypeScript.
+  <h2>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.75" />
+      <path
+        d="M5.2 19.2c.9-3.1 3.3-4.6 6.8-4.6s5.9 1.5 6.8 4.6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+      />
+    </svg>
+    <span i18n="@@aboutTitle">À propos</span>
+  </h2>
+  <p class="intro" i18n="@@aboutBio">
+    Je suis un développeur Angular confirmé, avec 5 années d'expérience. Je construis des interfaces
+    web et des applications hybrides, et je les relie à des API Nest.js conçues avec la même
+    structure : modules, injection de dépendances et TypeScript.
   </p>
-  <ul>
-    <li i18n="@@aboutUi">
-      Interfaces Angular accessibles, avec un état clair et des composants réutilisables
-    </li>
-    <li i18n="@@aboutApi">API Nest.js et contrats REST alignés sur le modèle du front</li>
-    <li i18n="@@aboutStructure">
-      Conception d'applications et de bases de données qui restent lisibles dans le temps
-    </li>
-  </ul>
+  <div class="layout">
+    <div class="card">
+      <p i18n="@@aboutUi">
+        Interfaces Angular accessibles, avec un état clair et des composants réutilisables
+      </p>
+      <p i18n="@@aboutApi">API Nest.js et contrats REST alignés sur le modèle du front</p>
+      <p i18n="@@aboutStructure">
+        Conception d'applications et de bases de données qui restent lisibles dans le temps
+      </p>
+      <p i18n="@@aboutAi">
+        Vibe coding avec l'IA, pour améliorer la qualité et la productivité sans perdre la lisibilité
+      </p>
+      <h3>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M3 10 12 6l9 4-9 4-9-4Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7 12.2v4c0 .5 2.2 2.3 5 2.3s5-1.8 5-2.3v-4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 10.2V16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+          />
+        </svg>
+        <span i18n="@@educationTitle">Formation</span>
+      </h3>
+      <ol>
+        <li>
+          <h4 i18n="@@educationMaster">Master professionnel en génie logiciel</h4>
+          <p>École Nationale d'Informatique (ENI) Fianarantsoa</p>
+          <p class="period">2019-2022</p>
+        </li>
+        <li>
+          <h4 i18n="@@educationBachelor">Licence professionnelle en génie logiciel</h4>
+          <p>École Nationale d'Informatique (ENI) Fianarantsoa</p>
+          <p class="period">2016-2019</p>
+        </li>
+        <li>
+          <h4 i18n="@@educationBaccalaureat">Baccalauréat série C, mention très bien</h4>
+          <p>Collège Saint François Xavier Fianarantsoa</p>
+          <p class="period">2015-2016</p>
+        </li>
+      </ol>
+    </div>
+    <aside class="card">
+      <h3>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.75" />
+          <path
+            d="M4 12h16M12 4c2.3 2.3 3.4 5 3.4 8s-1.1 5.7-3.4 8c-2.3-2.3-3.4-5-3.4-8s1.1-5.7 3.4-8Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+          />
+        </svg>
+        <span i18n="@@languagesTitle">Langues</span>
+      </h3>
+      <ul>
+        <li>
+          <span i18n="@@languageFrench">Français</span>
+          <span i18n="@@languageProfessional">Niveau professionnel</span>
+        </li>
+        <li>
+          <span i18n="@@languageEnglish">Anglais</span>
+          <span i18n="@@languageProfessional">Niveau professionnel</span>
+        </li>
+        <li>
+          <span i18n="@@languageMalagasy">Malgache</span>
+          <span i18n="@@languageNative">Langue maternelle</span>
+        </li>
+      </ul>
+    </aside>
+  </div>
 </section>

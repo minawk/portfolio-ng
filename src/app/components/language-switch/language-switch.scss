@@ -14,10 +14,19 @@
     color: var(--color-text);
     font-weight: 700;
     text-decoration: none;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background: color-mix(in srgb, var(--color-secondary) 35%, var(--color-surface));
+    }
 
     &[aria-current='page'] {
       background: var(--color-accent);
       color: var(--color-accent-contrast);
+
+      &:hover {
+        background: color-mix(in srgb, var(--color-accent) 85%, black);
+      }
     }
 
     span {

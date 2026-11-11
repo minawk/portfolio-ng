@@ -19,8 +19,14 @@ export type SkillIconName =
   | 'nuxt'
   | 'socket'
   | 'cpp'
+  | 'python'
   | 'sqlite'
-  | 'redis';
+  | 'mongodb'
+  | 'redis'
+  | 'graphql'
+  | 'linux'
+  | 'uml'
+  | 'agile';
 
 @Component({
   selector: 'app-skill-icon',

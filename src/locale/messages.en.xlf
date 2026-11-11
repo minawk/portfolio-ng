@@ -35,8 +35,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="aboutBio" datatype="html">
-        <source> Je suis développeur Angular. Je construis des interfaces web et des applications hybrides, et je les relie à des API Nest.js conçues avec la même structure : modules, injection de dépendances et TypeScript. </source>
-        <target>I am an Angular developer. I build web interfaces and hybrid applications, and I connect them to Nest.js APIs designed with the same structure: modules, dependency injection, and TypeScript.</target>
+        <source> Je suis un développeur Angular confirmé, avec 5 années d&apos;expérience. Je construis des interfaces web et des applications hybrides, et je les relie à des API Nest.js conçues avec la même structure : modules, injection de dépendances et TypeScript. </source>
+        <target>I am an experienced Angular developer, with 5 years of experience. I build web interfaces and hybrid applications, and I connect them to Nest.js APIs designed with the same structure: modules, dependency injection, and TypeScript.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
           <context context-type="linenumber">5,9</context>
@@ -66,6 +66,13 @@
           <context context-type="linenumber">15,18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="aboutAi" datatype="html">
+        <source> Vibe coding avec l&apos;IA, pour améliorer la qualité et la productivité sans perdre la lisibilité </source>
+        <target>Vibe coding with AI, to improve quality and productivity without losing readability</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/about/about.html</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="contactTitle" datatype="html">
         <source>Contact</source>
         <target>Contact</target>
@@ -75,12 +82,36 @@
         </context-group>
       </trans-unit>
       <trans-unit id="contactLead" datatype="html">
-        <source> Un projet Angular, une API Nest.js, ou une mission : écrivez-moi. </source>
-        <target>An Angular project, a Nest.js API, or a role: write to me.</target>
+        <source>Un projet une opportunité, ou une mission : écrivez-moi.</source>
+        <target>A project, an opportunity, or a mission: write to me.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
           <context context-type="linenumber">4,7</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="contactPhone" datatype="html">
+        <source>Téléphone</source>
+        <target>Phone</target>
+      </trans-unit>
+      <trans-unit id="contactPlace" datatype="html">
+        <source>Localisation</source>
+        <target>Location</target>
+      </trans-unit>
+      <trans-unit id="contactCopy" datatype="html">
+        <source>Copier</source>
+        <target>Copy</target>
+      </trans-unit>
+      <trans-unit id="contactCopied" datatype="html">
+        <source>Copié</source>
+        <target>Copied</target>
+      </trans-unit>
+      <trans-unit id="contactCopyEmail" datatype="html">
+        <source>Copier l&apos;adresse e-mail</source>
+        <target>Copy the email address</target>
+      </trans-unit>
+      <trans-unit id="contactCopyPhone" datatype="html">
+        <source>Copier le numéro de téléphone</source>
+        <target>Copy the phone number</target>
       </trans-unit>
       <trans-unit id="contactName" datatype="html">
         <source>Nom</source>
@@ -106,8 +137,16 @@
           <context context-type="linenumber">83,85</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="contactSubject" datatype="html">
+        <source>Objet</source>
+        <target>Subject</target>
+      </trans-unit>
+      <trans-unit id="contactSending" datatype="html">
+        <source>Envoi…</source>
+        <target>Sending…</target>
+      </trans-unit>
       <trans-unit id="contactSend" datatype="html">
-        <source> Envoyer </source>
+        <source>Envoyer</source>
         <target>Send</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
@@ -161,6 +200,14 @@
           <context context-type="sourcefile">src/app/blocs/contact/contact.ts</context>
           <context context-type="linenumber">33</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="contactSubjectRequired" datatype="html">
+        <source>Indiquez l'objet.</source>
+        <target>Enter a subject.</target>
+      </trans-unit>
+      <trans-unit id="contactSubjectTooLong" datatype="html">
+        <source>L'objet est trop long.</source>
+        <target>The subject is too long.</target>
       </trans-unit>
       <trans-unit id="contactMessageRequired" datatype="html">
         <source>Écrivez votre message.</source>
@@ -519,8 +566,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="heroIntro" datatype="html">
-        <source> Je conçois des applications web avec Angular : interfaces accessibles, état en signals, et un code structuré pour durer. </source>
-        <target>I design web applications with Angular: accessible interfaces, signal-based state, and code structured to last.</target>
+        <source> Je conçois des applications web avec Angular : des interfaces accessibles, une structure facile à suivre, et du code pensé pour durer. </source>
+        <target>I design web applications with Angular: accessible interfaces, a structure that is easy to follow, and code meant to last.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
           <context context-type="linenumber">6,9</context>
@@ -535,7 +582,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="heroCv" datatype="html">
-        <source> Télécharger le CV </source>
+        <source>Télécharger le CV</source>
         <target>Download the CV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>

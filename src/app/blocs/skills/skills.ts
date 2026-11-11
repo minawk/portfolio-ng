@@ -25,6 +25,9 @@ export class Skills {
         { name: 'Angular', icon: 'angular' },
         { name: 'TypeScript', icon: 'typescript' },
         { name: 'JavaScript', icon: 'javascript' },
+        { name: 'Nest.js', icon: 'nest' },
+        { name: 'Node.js', icon: 'node' },
+        { name: 'MySQL', icon: 'mysql' },
         { name: 'Git', icon: 'git' },
         { name: 'HTML', icon: 'html' },
         { name: 'SCSS', icon: 'scss' },
@@ -34,9 +37,6 @@ export class Skills {
     {
       title: $localize`:@@skillsAdvanced:Avancé`,
       skills: [
-        { name: 'Nest.js', icon: 'nest' },
-        { name: 'Node.js', icon: 'node' },
-        { name: 'MySQL', icon: 'mysql' },
         { name: 'PostgreSQL', icon: 'postgres' },
         { name: 'Docker', icon: 'docker' },
         { name: 'Ionic', icon: 'ionic' },
@@ -44,14 +44,20 @@ export class Skills {
         { name: 'Vue.js', icon: 'vue' },
         { name: 'Nuxt.js', icon: 'nuxt' },
         { name: 'Socket.io', icon: 'socket' },
+        { name: 'Linux', icon: 'linux' },
+        { name: 'UML', icon: 'uml' },
+        { name: 'Agile', icon: 'agile' },
       ],
     },
     {
       title: $localize`:@@skillsExploring:Exploration et académique`,
       skills: [
         { name: 'C++', icon: 'cpp' },
+        { name: 'Python', icon: 'python' },
         { name: 'SQLite', icon: 'sqlite' },
+        { name: 'MongoDB', icon: 'mongodb' },
         { name: 'Redis', icon: 'redis' },
+        { name: 'GraphQL', icon: 'graphql' },
       ],
     },
   ];

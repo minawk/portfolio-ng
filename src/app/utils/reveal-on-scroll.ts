@@ -26,9 +26,10 @@ export function revealOnScroll(root: ParentNode): void {
   };
 
   const revealInView = () => {
-    const limit = window.innerHeight * 0.92;
+    const viewBottom = window.innerHeight;
     for (const node of pending) {
-      if (node.getBoundingClientRect().top < limit) {
+      const rect = node.getBoundingClientRect();
+      if (rect.top < viewBottom && rect.bottom > 0) {
         reveal(node);
       }
     }
@@ -54,7 +55,7 @@ export function revealOnScroll(root: ParentNode): void {
         window.removeEventListener('scroll', revealInView);
       }
     },
-    { rootMargin: '0px 0px -8% 0px', threshold: 0 },
+    { threshold: 0 },
   );
 
   for (const node of nodes) {

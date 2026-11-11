@@ -54,3 +54,8 @@ body {
   outline: 2px solid var(--color-focus);
   outline-offset: 3px;
 }
+
+main:focus,
+main:focus-visible {
+  outline: none;
+}

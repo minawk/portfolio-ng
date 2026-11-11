@@ -24,6 +24,7 @@
     > a {
       display: inline-flex;
       align-items: center;
+      gap: 0.5rem;
       min-height: 2.75rem;
       padding: 0.5rem 1rem;
       border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
@@ -32,6 +33,20 @@
       color: var(--color-text);
       font-weight: 700;
       text-decoration: none;
+      transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease;
+
+      svg {
+        width: 1.35rem;
+        height: 1.35rem;
+        fill: currentColor;
+      }
+
+      &:hover {
+        border-color: var(--color-secondary);
+        background: color-mix(in srgb, var(--color-secondary) 35%, var(--color-surface));
+      }
     }
   }
 

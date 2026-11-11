@@ -25,7 +25,7 @@ export async function sendContactMail(
       from: settings.from,
       to: settings.to,
       replyTo: message.email,
-      subject: `Portfolio — ${message.name}`,
+      subject: `Portfolio — ${message.subject}`,
       text: `${message.name}\n${message.email}\n\n${message.message}`,
     });
   } finally {

@@ -14,9 +14,7 @@ export class Header {
     { id: 'about', label: $localize`:@@navAbout:À propos` },
     { id: 'skills', label: $localize`:@@navSkills:Compétences` },
     { id: 'experience', label: $localize`:@@navExperience:Expérience` },
-    { id: 'education', label: $localize`:@@navEducation:Formation` },
     { id: 'projects', label: $localize`:@@navProjects:Projets` },
-    { id: 'langues', label: $localize`:@@navLanguages:Langues` },
     { id: 'contact', label: $localize`:@@navContact:Contact` },
   ];
 }

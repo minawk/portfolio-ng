@@ -7,11 +7,13 @@ describe('readContactMessage', () => {
       readContactMessage({
         name: ' Aina ',
         email: ' aina@example.com ',
+        subject: ' Mission ',
         message: ' Bonjour ',
       }),
     ).toEqual({
       name: 'Aina',
       email: 'aina@example.com',
+      subject: 'Mission',
       message: 'Bonjour',
     });
   });
@@ -21,6 +23,7 @@ describe('readContactMessage', () => {
       readContactMessage({
         name: 'Aina',
         email: 'aina@example.com',
+        subject: 'Mission',
         message: 'Bonjour',
         website: 'https://spam.example',
       }),
@@ -28,12 +31,37 @@ describe('readContactMessage', () => {
   });
 
   it('rejects a missing field, a broken email, and a header break', () => {
-    expect(readContactMessage({ name: 'Aina', email: 'aina@example.com' })).toBeNull();
+    expect(readContactMessage({ name: 'Aina', email: 'aina@example.com', subject: 'Mission' })).toBeNull();
     expect(
-      readContactMessage({ name: 'Aina', email: 'pas-une-adresse', message: 'Bonjour' }),
+      readContactMessage({
+        name: 'Aina',
+        email: 'aina@example.com',
+        message: 'Bonjour',
+      }),
     ).toBeNull();
     expect(
-      readContactMessage({ name: 'Aina\nBcc: x', email: 'aina@example.com', message: 'Bonjour' }),
+      readContactMessage({
+        name: 'Aina',
+        email: 'pas-une-adresse',
+        subject: 'Mission',
+        message: 'Bonjour',
+      }),
+    ).toBeNull();
+    expect(
+      readContactMessage({
+        name: 'Aina\nBcc: x',
+        email: 'aina@example.com',
+        subject: 'Mission',
+        message: 'Bonjour',
+      }),
+    ).toBeNull();
+    expect(
+      readContactMessage({
+        name: 'Aina',
+        email: 'aina@example.com',
+        subject: 'Ligne\nsecrete',
+        message: 'Bonjour',
+      }),
     ).toBeNull();
     expect(readContactMessage(null)).toBeNull();
   });

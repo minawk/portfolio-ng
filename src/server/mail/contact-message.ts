@@ -1,6 +1,7 @@
 export interface ContactMessage {
   name: string;
   email: string;
+  subject: string;
   message: string;
 }
 
@@ -19,13 +20,14 @@ export function readContactMessage(body: unknown): ContactMessage | null {
 
   const name = cleanLine(record['name'], 120);
   const email = cleanLine(record['email'], 254);
+  const subject = cleanLine(record['subject'], 160);
   const message = cleanText(record['message'], 5000);
 
-  if (!name || !email || !message || !EMAIL_PATTERN.test(email)) {
+  if (!name || !email || !subject || !message || !EMAIL_PATTERN.test(email)) {
     return null;
   }
 
-  return { name, email, message };
+  return { name, email, subject, message };
 }
 
 function cleanLine(value: unknown, maxLength: number): string | null {
