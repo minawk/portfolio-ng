@@ -1,0 +1,101 @@
+<section class="contact" id="contact">
+  <h2 i18n="@@contactTitle">Contact</h2>
+  <div>
+    <ul>
+      <li>
+        <a href="mailto:contact@minawk.dev">contact@minawk.dev</a>
+      </li>
+      <li>
+        <a href="tel:+261343918756">+261 34 39 187 56</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/minawk/">LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://github.com/minawk">GitHub</a>
+      </li>
+    </ul>
+    <form novalidate (submit)="send($event)">
+      <div>
+        <label for="contact-name" i18n="@@contactName">Nom</label>
+        <input
+          id="contact-name"
+          type="text"
+          autocomplete="name"
+          [formField]="contactForm.name"
+          [attr.aria-invalid]="
+            contactForm.name().touched() && contactForm.name().invalid() ? true : null
+          "
+          [attr.aria-describedby]="
+            contactForm.name().touched() && contactForm.name().invalid()
+              ? 'contact-name-error'
+              : null
+          "
+        />
+        <div id="contact-name-error">
+          @if (contactForm.name().touched()) {
+            @for (error of contactForm.name().errors(); track error.kind) {
+              <p aria-live="polite">{{ error.message }}</p>
+            }
+          }
+        </div>
+      </div>
+      <div>
+        <label for="contact-email" i18n="@@contactEmail">E-mail</label>
+        <input
+          id="contact-email"
+          type="email"
+          autocomplete="email"
+          [formField]="contactForm.email"
+          [attr.aria-invalid]="
+            contactForm.email().touched() && contactForm.email().invalid() ? true : null
+          "
+          [attr.aria-describedby]="
+            contactForm.email().touched() && contactForm.email().invalid()
+              ? 'contact-email-error'
+              : null
+          "
+        />
+        <div id="contact-email-error">
+          @if (contactForm.email().touched()) {
+            @for (error of contactForm.email().errors(); track error.kind) {
+              <p aria-live="polite">{{ error.message }}</p>
+            }
+          }
+        </div>
+      </div>
+      <div>
+        <label for="contact-message" i18n="@@contactMessage">Message</label>
+        <textarea
+          id="contact-message"
+          rows="5"
+          [formField]="contactForm.message"
+          [attr.aria-invalid]="
+            contactForm.message().touched() && contactForm.message().invalid() ? true : null
+          "
+          [attr.aria-describedby]="
+            contactForm.message().touched() && contactForm.message().invalid()
+              ? 'contact-message-error'
+              : null
+          "
+        ></textarea>
+        <div id="contact-message-error">
+          @if (contactForm.message().touched()) {
+            @for (error of contactForm.message().errors(); track error.kind) {
+              <p aria-live="polite">{{ error.message }}</p>
+            }
+          }
+        </div>
+      </div>
+      <button type="submit" i18n="@@contactSend" [disabled]="contactForm().submitting()">
+        Envoyer
+      </button>
+      @if (sent()) {
+        <p role="status" i18n="@@contactSent">Votre message a été envoyé.</p>
+      }
+      @if (sendFailed()) {
+        <p role="alert" i18n="@@contactSendFailed">Le message n'a pas pu être envoyé. Réessayez.</p>
+      }
+    </form>
+  </div>
+</section>

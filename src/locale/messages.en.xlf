@@ -50,6 +50,110 @@
           <context context-type="linenumber">7,10</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="contactTitle" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactName" datatype="html">
+        <source>Nom</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactEmail" datatype="html">
+        <source>E-mail</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactMessage" datatype="html">
+        <source>Message</source>
+        <target>Message</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
+          <context context-type="linenumber">68,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactSend" datatype="html">
+        <source> Envoyer </source>
+        <target>Send</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
+          <context context-type="linenumber">91,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactSent" datatype="html">
+        <source>Votre message a été envoyé.</source>
+        <target>Your message has been sent.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
+          <context context-type="linenumber">94,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactSendFailed" datatype="html">
+        <source>Le message n&apos;a pas pu être envoyé. Réessayez.</source>
+        <target>The message could not be sent. Try again.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.html</context>
+          <context context-type="linenumber">97,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactNameRequired" datatype="html">
+        <source>Indiquez votre nom.</source>
+        <target>Enter your name.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactNameTooLong" datatype="html">
+        <source>Le nom est trop long.</source>
+        <target>The name is too long.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactEmailRequired" datatype="html">
+        <source>Indiquez votre adresse e-mail.</source>
+        <target>Enter your email address.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactEmailInvalid" datatype="html">
+        <source>Indiquez une adresse e-mail valide.</source>
+        <target>Enter a valid email address.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactMessageRequired" datatype="html">
+        <source>Écrivez votre message.</source>
+        <target>Write your message.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactMessageTooLong" datatype="html">
+        <source>Le message est trop long.</source>
+        <target>The message is too long.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/contact/contact.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="educationTitle" datatype="html">
         <source>Formation</source>
         <target>Education</target>
