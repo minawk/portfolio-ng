@@ -16,14 +16,26 @@
   }
 
   .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
     min-width: 0;
     margin-right: auto;
-    overflow: hidden;
     color: inherit;
     font-weight: 700;
     text-decoration: none;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+
+    img {
+      flex-shrink: 0;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 
   .menu-button {

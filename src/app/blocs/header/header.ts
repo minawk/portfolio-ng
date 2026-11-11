@@ -1,10 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { afterNextRender, Component, DestroyRef, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { Icon } from '../../components/icon/icon';
 import { LanguageSwitch } from '../../components/language-switch/language-switch';
 import { ThemeToggle } from '../../components/theme-toggle/theme-toggle';
 
 @Component({
-  imports: [Icon, LanguageSwitch, ThemeToggle],
+  imports: [Icon, LanguageSwitch, NgOptimizedImage, ThemeToggle],
   selector: 'app-header',
   templateUrl: './header.html',
   styleUrl: './header.scss',
