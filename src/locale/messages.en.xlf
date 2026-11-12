@@ -3,16 +3,16 @@
   <file source-language="fr" datatype="plaintext" original="ng2.template" target-language="en">
     <body>
       <trans-unit id="pageTitle" datatype="html">
-        <source>Benjamina Randrianasolo - Portfolio</source>
-        <target>Benjamina Randrianasolo - Portfolio</target>
+        <source>Benjamina Randrianasolo (minawk) - Développeur Angular / Fullstack</source>
+        <target>Benjamina Randrianasolo (minawk) - Angular / Fullstack Developer</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pageDescription" datatype="html">
-        <source>Portfolio de Benjamina Randrianasolo, développeur Angular / Fullstack à Antananarivo.</source>
-        <target>Portfolio of Benjamina Randrianasolo, an Angular / Fullstack developer in Antananarivo.</target>
+        <source>Portfolio de Benjamina Randrianasolo (minawk), développeur Angular / Fullstack à Antananarivo, Madagascar.</source>
+        <target>Portfolio of Benjamina Randrianasolo (minawk), an Angular / Fullstack developer in Antananarivo, Madagascar.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.ts</context>
           <context context-type="linenumber">21</context>

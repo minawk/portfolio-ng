@@ -17,15 +17,15 @@ export class App {
   private readonly meta = inject(Meta);
 
   constructor() {
-    const title = $localize`:@@pageTitle:Benjamina Randrianasolo - Portfolio`;
-    const description = $localize`:@@pageDescription:Portfolio de Benjamina Randrianasolo, développeur Angular / Fullstack à Antananarivo.`;
+    const title = $localize`:@@pageTitle:Benjamina Randrianasolo (minawk) - Développeur Angular / Fullstack`;
+    const description = $localize`:@@pageDescription:Portfolio de Benjamina Randrianasolo (minawk), développeur Angular / Fullstack à Antananarivo, Madagascar.`;
     const isEnglish = $localize.locale === 'en';
     const pageUrl = isEnglish ? 'https://minawk.dev/en/' : 'https://minawk.dev/';
 
     this.documentTitle.setTitle(title);
     this.meta.updateTag({ name: 'description', content: description });
     this.addSocialTags(title, description, pageUrl, isEnglish);
-    this.addStructuredData(title, description, pageUrl);
+    this.addStructuredData(description, pageUrl);
   }
 
   private addSocialTags(title: string, description: string, pageUrl: string, isEnglish: boolean): void {
@@ -34,6 +34,7 @@ export class App {
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
       { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'minawk' },
       { property: 'og:url', content: pageUrl },
       { property: 'og:image', content: image },
       { property: 'og:image:type', content: 'image/jpeg' },
@@ -52,7 +53,7 @@ export class App {
     }
   }
 
-  private addStructuredData(title: string, description: string, pageUrl: string): void {
+  private addStructuredData(description: string, pageUrl: string): void {
     if (this.document.getElementById('structured-data')) {
       return;
     }
@@ -69,6 +70,9 @@ export class App {
           '@type': 'Person',
           '@id': personId,
           name: 'Benjamina Randrianasolo',
+          alternateName: ['minawk', 'Benjamina'],
+          givenName: 'Benjamina',
+          familyName: 'Randrianasolo',
           jobTitle: $localize`:@@heroRole:Développeur Angular / Fullstack`,
           description,
           url: 'https://minawk.dev/',
@@ -81,13 +85,21 @@ export class App {
             addressCountry: 'MG',
           },
           sameAs: ['https://www.linkedin.com/in/minawk/', 'https://github.com/minawk'],
-          knowsAbout: ['Angular', 'Nest.js', 'TypeScript'],
+          knowsAbout: [
+            'Angular',
+            'TypeScript',
+            'Nest.js',
+            'Node.js',
+            'Ionic',
+            'Fullstack development',
+          ],
         },
         {
           '@type': 'WebSite',
           '@id': 'https://minawk.dev/#website',
           url: pageUrl,
-          name: title,
+          name: 'minawk',
+          alternateName: ['minawk.dev', 'Benjamina Randrianasolo'],
           description,
           inLanguage: isEnglish ? 'en' : 'fr',
           author: { '@id': personId },

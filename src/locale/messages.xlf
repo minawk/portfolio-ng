@@ -3,14 +3,14 @@
   <file source-language="fr" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="pageTitle" datatype="html">
-        <source>Benjamina Randrianasolo - Portfolio</source>
+        <source>Benjamina Randrianasolo (minawk) - Développeur Angular / Fullstack</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pageDescription" datatype="html">
-        <source>Portfolio de Benjamina Randrianasolo, développeur Angular / Fullstack à Antananarivo.</source>
+        <source>Portfolio de Benjamina Randrianasolo (minawk), développeur Angular / Fullstack à Antananarivo, Madagascar.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.ts</context>
           <context context-type="linenumber">21</context>
@@ -20,7 +20,7 @@
         <source>Développeur Angular / Fullstack</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.ts</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">76</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
@@ -715,14 +715,14 @@
         <source>Télécharger le CV</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
-          <context context-type="linenumber">35,37</context>
+          <context context-type="linenumber">39,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="heroContact" datatype="html">
         <source>Me contacter</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
-          <context context-type="linenumber">37,40</context>
+          <context context-type="linenumber">41,44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectsTitle" datatype="html">
@@ -820,7 +820,7 @@
         <source>Langue</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/language-switch/language-switch.html</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">2,4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skipToContent" datatype="html">
