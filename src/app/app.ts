@@ -18,7 +18,7 @@ export class App {
 
   constructor() {
     const title = $localize`:@@pageTitle:Benjamina Randrianasolo - Portfolio`;
-    const description = $localize`:@@pageDescription:Portfolio de Benjamina Randrianasolo, développeur Angular à Antananarivo.`;
+    const description = $localize`:@@pageDescription:Portfolio de Benjamina Randrianasolo, développeur Angular / Fullstack à Antananarivo.`;
     const isEnglish = $localize.locale === 'en';
     const pageUrl = isEnglish ? 'https://minawk.dev/en/' : 'https://minawk.dev/';
 
@@ -69,7 +69,7 @@ export class App {
           '@type': 'Person',
           '@id': personId,
           name: 'Benjamina Randrianasolo',
-          jobTitle: $localize`:@@heroRole:Développeur Angular`,
+          jobTitle: $localize`:@@heroRole:Développeur Angular / Fullstack`,
           description,
           url: 'https://minawk.dev/',
           image: 'https://minawk.dev/og.jpg',
