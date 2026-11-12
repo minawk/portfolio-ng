@@ -30,6 +30,7 @@ export default async function handler(request: Request, context: GeoContext): Pr
   });
 }
 
+// Netlify reads this statically at build time: plain string literals only.
 export const config = {
-  path: [`/${FILE_NAME}`, `/en/${FILE_NAME}`],
+  path: ['/benjamina-randrianasolo-cv.pdf', '/en/benjamina-randrianasolo-cv.pdf'],
 };
