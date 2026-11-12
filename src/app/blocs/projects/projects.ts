@@ -19,7 +19,7 @@ export class Projects {
     },
     {
       title: 'Affectation RO',
-      href: 'https://affectation-ro.netlify.app',
+      href: 'https://affectation-ro.minawk.dev/',
       image: 'projects/affectation-ro.webp',
       width: 960,
       height: 482,
