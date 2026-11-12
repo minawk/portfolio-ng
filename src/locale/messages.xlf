@@ -20,7 +20,7 @@
         <source>Développeur Angular / Fullstack</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.ts</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">87</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
@@ -439,7 +439,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendPeriod" datatype="html">
-        <source>Juin 2023 - Décembre 2024</source>
+        <source>Juin 2023 - Janvier 2024</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">57,60</context>

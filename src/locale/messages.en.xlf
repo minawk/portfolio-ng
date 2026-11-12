@@ -495,8 +495,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendPeriod" datatype="html">
-        <source>Juin 2023 - Décembre 2024</source>
-        <target>June 2023 - December 2024</target>
+        <source>Juin 2023 - Janvier 2024</source>
+        <target>June 2023 - January 2024</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">57,60</context>
