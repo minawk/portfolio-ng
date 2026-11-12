@@ -9,6 +9,16 @@
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
+# First visit with an English browser/OS: send to the English version.
+# Once the `nf_lang` cookie is set (see src/index.html and the language switch),
+# Netlify uses it instead of Accept-Language, so the visitor's choice is kept.
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  force = true
+  conditions = { Language = ["en"] }
+
 [[redirects]]
   from = "/api/contact"
   to = "/.netlify/functions/contact"

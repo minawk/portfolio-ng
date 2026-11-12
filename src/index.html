@@ -12,6 +12,13 @@
 
         document.documentElement.dataset.theme = theme;
       } catch {}
+
+      // Mark the first visit as done: Netlify's language redirect (netlify.toml)
+      // reads this cookie instead of the browser language on later visits.
+      if (!/(?:^|;\s*)nf_lang=/.test(document.cookie)) {
+        const pageLanguage = document.documentElement.lang.split('-')[0] || 'fr';
+        document.cookie = `nf_lang=${pageLanguage}; path=/; max-age=31536000; SameSite=Lax`;
+      }
     </script>
     <title>Benjamina Randrianasolo - Portfolio</title>
     <base href="/" />
