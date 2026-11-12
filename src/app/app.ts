@@ -24,8 +24,19 @@ export class App {
 
     this.documentTitle.setTitle(title);
     this.meta.updateTag({ name: 'description', content: description });
+    this.addCanonical(pageUrl);
     this.addSocialTags(title, description, pageUrl, isEnglish);
     this.addStructuredData(description, pageUrl);
+  }
+
+  private addCanonical(pageUrl: string): void {
+    let link = this.document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!link) {
+      link = this.document.createElement('link');
+      link.rel = 'canonical';
+      this.document.head.appendChild(link);
+    }
+    link.href = pageUrl;
   }
 
   private addSocialTags(title: string, description: string, pageUrl: string, isEnglish: boolean): void {
