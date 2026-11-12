@@ -28,8 +28,12 @@
     <div class="actions">
       <a
         class="primary"
-        href="benjamina-randrianasolo.pdf"
-        download="Benjamina-Randrianasolo-CV.pdf"
+        [href]="
+          mobile() ? 'benjamina-randrianasolo-cv.pdf?download' : 'benjamina-randrianasolo-cv.pdf'
+        "
+        [attr.download]="mobile() ? 'benjamina-randrianasolo-cv.pdf' : null"
+        [attr.target]="mobile() ? null : '_blank'"
+        rel="noopener"
       >
         <app-icon name="download" />
         <span i18n="@@heroCv">Télécharger le CV</span>

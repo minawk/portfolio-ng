@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, afterNextRender, signal } from '@angular/core';
 import { Icon } from '../../components/icon/icon';
 
 @Component({
@@ -8,4 +8,13 @@ import { Icon } from '../../components/icon/icon';
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
-export class Hero {}
+export class Hero {
+  /** Touch devices download the CV directly; desktops open it in the browser's PDF viewer. */
+  protected readonly mobile = signal(false);
+
+  constructor() {
+    afterNextRender(() => {
+      this.mobile.set(matchMedia('(hover: none) and (pointer: coarse)').matches);
+    });
+  }
+}
