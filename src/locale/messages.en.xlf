@@ -672,7 +672,7 @@
       </trans-unit>
       <trans-unit id="footerCredit" datatype="html">
         <source>© 2026 Benjamina Randrianasolo @minawk</source>
-        <target>© 2026 Benjamina Randrianasolo</target>
+        <target>© 2026 Benjamina Randrianasolo @minawk</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/footer/footer.html</context>
           <context context-type="linenumber">3,6</context>
