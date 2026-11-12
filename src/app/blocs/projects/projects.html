@@ -10,8 +10,8 @@
         <p>Neoshore Madagascar</p>
         <h4 i18n="@@projectPlanningWeb">Application web de gestion de planning</h4>
         <p>
-          <a href="https://pro.ooviiz.com">pro.ooviiz.com</a>,
-          <a href="https://thegreenshot.io">thegreenshot.io</a>
+          <a href="https://pro.ooviiz.com" target="_blank">pro.ooviiz.com</a>,
+          <a href="https://thegreenshot.io" target="_blank">thegreenshot.io</a>
         </p>
       </article>
     </li>
@@ -22,7 +22,7 @@
           Application hybride web et mobile de gestion de planning
         </h4>
         <p>
-          <a href="https://app.ooviiz.com">app.ooviiz.com</a>
+          <a href="https://app.ooviiz.com" target="_blank">app.ooviiz.com</a>
         </p>
       </article>
     </li>
@@ -31,7 +31,7 @@
         <p>SFER / FINAMAD</p>
         <h4 i18n="@@projectPhotovoltaic">Plateforme de vente de produits photovoltaïques</h4>
         <p>
-          <a href="https://solardropshipping.com/">solardropshipping.com</a>
+          <a href="https://solardropshipping.com/" target="_blank">solardropshipping.com</a>
         </p>
       </article>
     </li>
@@ -52,7 +52,7 @@
   <ul class="personal">
     @for (project of personalProjects; track project.href) {
       <li>
-        <a [href]="project.href">
+        <a [href]="project.href" target="_blank">
           <img [ngSrc]="project.image" [width]="project.width" [height]="project.height" alt="" />
           {{ project.title }}
         </a>
