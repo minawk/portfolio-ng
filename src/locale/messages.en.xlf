@@ -416,7 +416,7 @@
       </trans-unit>
       <trans-unit id="experienceNeoshoreFullstackDatabase" datatype="html">
         <source> Modélisation et optimisation des bases de données MySQL </source>
-        <target>Modeled and optimized MySQL databases</target>
+        <target>MySQL databases modeling and optimization</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">22,24</context>
