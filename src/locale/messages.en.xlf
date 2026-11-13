@@ -39,40 +39,40 @@
         </context-group>
       </trans-unit>
       <trans-unit id="aboutBio" datatype="html">
-        <source> Développeur Angular confirmé avec plus de 5 ans d&apos;expérience, je conçois des interfaces web et des applications hybrides, que je relie à des API Nest.js construites sur la même structure : modules, injection de dépendances et TypeScript. </source>
-        <target>An experienced Angular developer with over 5 years of experience, I build web interfaces and hybrid applications, and connect them to Nest.js APIs built on the same structure: modules, dependency injection, and TypeScript.</target>
+        <source> Développeur Angular confirmé, j&apos;accompagne depuis plus de 5 ans des produits web et mobiles hybrides, de la maquette jusqu&apos;à la mise en production, back-end Nest.js et base de données compris. </source>
+        <target>An experienced Angular developer, I&apos;ve spent over 5 years taking web and hybrid mobile products from mockup to production, Nest.js back end and database included.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
           <context context-type="linenumber">7,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aboutUi" datatype="html">
-        <source> Interfaces Angular accessibles, avec un état clair et des composants réutilisables </source>
-        <target>Accessible Angular interfaces, with clear state and reusable components</target>
+        <source> Composants réutilisables, état géré avec les signals et une vraie attention à l&apos;accessibilité </source>
+        <target>Reusable components, signal-based state and real care for accessibility</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
           <context context-type="linenumber">14,16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aboutApi" datatype="html">
-        <source> API Nest.js dont les contrats sont alignés sur le modèle du front </source>
-        <target>Nest.js APIs whose contracts match the front-end model</target>
+        <source>Contrats d&apos;API Nest.js calqués sur les besoins du front</source>
+        <target>Nest.js API contracts shaped around what the front end needs</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
           <context context-type="linenumber">17,19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aboutStructure" datatype="html">
-        <source> Conception d&apos;applications et de bases de données qui restent lisibles et maintenables dans le temps </source>
-        <target>Application and database design that stays readable and maintainable over time</target>
+        <source> Schémas de données et architectures prévus pour évoluer sans réécriture </source>
+        <target>Data schemas and architectures that can grow without a rewrite</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
           <context context-type="linenumber">20,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aboutAi" datatype="html">
-        <source> Développement assisté par l&apos;IA, pour gagner en qualité et en productivité sans sacrifier la lisibilité du code </source>
-        <target>AI-assisted development, to improve quality and productivity without sacrificing code readability</target>
+        <source> IA utilisée au quotidien pour accélérer, avec une relecture systématique du code généré </source>
+        <target>AI tools used daily to speed things up, with every generated line reviewed</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
           <context context-type="linenumber">24,26</context>
@@ -399,48 +399,48 @@
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFullstackPlanning" datatype="html">
-        <source> Développement d&apos;une application web de gestion de planning avec Angular </source>
-        <target>Developed a scheduling web application with Angular</target>
+        <source> Création, sous Angular, d&apos;une application web de gestion de planning </source>
+        <target>Built a scheduling web app in Angular</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">16,18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFullstackApi" datatype="html">
-        <source> Conception et développement d&apos;API REST en microservices avec Nest.js et Express.js </source>
-        <target>Designed and built REST microservice APIs with Nest.js and Express.js</target>
+        <source> Architecture en microservices : API REST écrites avec Nest.js et Express.js </source>
+        <target>Split the back end into microservices, with REST APIs written in Nest.js and Express.js</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">19,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFullstackDatabase" datatype="html">
-        <source> Modélisation et optimisation des bases de données MySQL </source>
-        <target>MySQL databases modeling and optimization</target>
+        <source> Modélisation des bases MySQL et optimisation des requêtes </source>
+        <target>MySQL databases modeling and queries optimization</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">22,24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFullstackUpgrade" datatype="html">
-        <source> Montée de version d&apos;Angular 17 à 21 : composants standalone, signals et nouveau contrôle de flux </source>
-        <target>Upgraded Angular from version 17 to 21: standalone components, signals and the new control flow</target>
+        <source> Passage d&apos;Angular 17 à 21, avec adoption des composants standalone, des signals et du nouveau contrôle de flux </source>
+        <target>Migrated the codebase from Angular 17 to 21, adopting standalone components, signals and the new control flow</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">25,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFullstackPython" datatype="html">
-        <source> Développement de scripts Python pour l&apos;automatisation et le traitement de données </source>
-        <target>Wrote Python scripts for automation and data processing</target>
+        <source> Scripts Python d&apos;automatisation et de traitement de données </source>
+        <target>Automated tasks and processed data with Python scripts</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">29,31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFullstackReview" datatype="html">
-        <source> Revue de code, correction de bugs et rédaction de la documentation technique </source>
-        <target>Code reviews, bug fixing and technical documentation</target>
+        <source> Revues de code, correction de bugs et documentation technique </source>
+        <target>Reviewed code, fixed bugs and kept the technical documentation up to date</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">32,35</context>
@@ -503,40 +503,40 @@
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendApp" datatype="html">
-        <source> Développement d&apos;une application hybride web et mobile de gestion de planning avec Ionic et Capacitor </source>
-        <target>Developed a hybrid web and mobile scheduling application with Ionic and Capacitor</target>
+        <source> Version hybride web et mobile de l&apos;outil de planning, avec Ionic et Capacitor </source>
+        <target>Shipped a hybrid web and mobile version of the scheduling tool with Ionic and Capacitor</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">61,64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendMigration" datatype="html">
-        <source> Migration de l&apos;application d&apos;Angular vers Vue.js </source>
-        <target>Migrated the application from Angular to Vue.js</target>
+        <source> Portage de l&apos;application d&apos;Angular vers Vue.js </source>
+        <target>Ported the application from Angular to Vue.js</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">65,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendUi" datatype="html">
-        <source> Intégration des maquettes en interfaces responsives et accessibles </source>
-        <target>Turned designs into responsive, accessible interfaces</target>
+        <source> Intégration des maquettes en écrans responsives et accessibles </source>
+        <target>Turned mockups into responsive, accessible screens</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">68,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendMobile" datatype="html">
-        <source> Accès aux fonctionnalités natives et publication des applications Android et iOS avec Capacitor </source>
-        <target>Used native features and published the Android and iOS apps with Capacitor</target>
+        <source> Branchement des fonctionnalités natives et mise en ligne sur les stores Android et iOS </source>
+        <target>Wired up native device features and released the apps on the Android and iOS stores</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">71,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendUpgrade" datatype="html">
-        <source>Montée de version d&apos;Angular 14 à 17</source>
-        <target>Upgraded Angular from version 14 to 17</target>
+        <source>Mise à jour d&apos;Angular 14 vers 17</source>
+        <target>Updated Angular from 14 to 17</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">74,76</context>
@@ -559,32 +559,32 @@
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferSales" datatype="html">
-        <source> Développement d&apos;une plateforme web de vente de produits photovoltaïques </source>
-        <target>Developed a web platform for selling photovoltaic products</target>
+        <source> Plateforme de vente en ligne de produits photovoltaïques </source>
+        <target>Developed an online store for photovoltaic products</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">100,102</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferApi" datatype="html">
-        <source>Conception et développement des API REST avec Nest.js</source>
-        <target>Designed and built REST APIs with Nest.js</target>
+        <source>Écriture des API REST sous Nest.js</source>
+        <target>Wrote the REST APIs in Nest.js</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">102,103</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferDatabase" datatype="html">
-        <source>Conception des bases de données MySQL et MongoDB</source>
-        <target>Designed MySQL and MongoDB databases</target>
+        <source>Structuration des données entre MySQL et MongoDB</source>
+        <target>Structured the data across MySQL and MongoDB</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">103,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferDocker" datatype="html">
-        <source> Conteneurisation des applications avec Docker pour le développement et le déploiement </source>
-        <target>Containerized the applications with Docker for development and deployment</target>
+        <source> Environnements de développement et de déploiement conteneurisés avec Docker </source>
+        <target>Containerized the development and deployment environments with Docker</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">105,107</context>
@@ -607,24 +607,24 @@
         </context-group>
       </trans-unit>
       <trans-unit id="experienceIngenosyaApp" datatype="html">
-        <source> Développement d&apos;une application mobile de gestion de station-service avec Ionic et Angular </source>
-        <target>Developed a mobile application for gas station management with Ionic and Angular</target>
+        <source> Application mobile Ionic / Angular pour la gestion d&apos;une station-service </source>
+        <target>Created an Ionic / Angular mobile app for running a gas station</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">132,134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceIngenosyaNative" datatype="html">
-        <source> Intégration de plugins Cordova pour accéder aux fonctionnalités natives d&apos;Android </source>
-        <target>Integrated Cordova plugins to access native Android features</target>
+        <source> Plugins Cordova pour exploiter les capacités natives d&apos;Android </source>
+        <target>Added Cordova plugins to tap into native Android capabilities</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">135,137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceIngenosyaTests" datatype="html">
-        <source> Tests et débogage de l&apos;application sur appareils Android </source>
-        <target>Tested and debugged the application on Android devices</target>
+        <source>Tests et débogage sur appareils Android</source>
+        <target>Tested and debugged on Android devices</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">138,141</context>
@@ -647,24 +647,24 @@
         </context-group>
       </trans-unit>
       <trans-unit id="experienceBionexxApp" datatype="html">
-        <source> Développement d&apos;une application web et mobile de gestion de stock </source>
-        <target>Developed a web and mobile inventory management application</target>
+        <source> Outil de suivi des stocks disponible sur le web et sur mobile </source>
+        <target>Delivered an inventory tracking tool for web and mobile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">160,162</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceBionexxApi" datatype="html">
-        <source> Développement de l&apos;API Node.js et conception de la base de données MySQL </source>
-        <target>Built the Node.js API and designed the MySQL database</target>
+        <source>Back-end : API Node.js adossée à une base MySQL</source>
+        <target>Set up a Node.js API on top of a MySQL database</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">163,165</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceBionexxUi" datatype="html">
-        <source> Réalisation de l&apos;interface web avec Vue.js et de l&apos;application mobile avec React Native </source>
-        <target>Built the web interface with Vue.js and the mobile app with React Native</target>
+        <source> Front-end : interface Vue.js côté web, React Native côté mobile </source>
+        <target>Coded the Vue.js web interface and the React Native mobile app</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
           <context context-type="linenumber">166,168</context>
@@ -839,40 +839,40 @@
         </context-group>
       </trans-unit>
       <trans-unit id="projectPlanningWeb" datatype="html">
-        <source>Application web de gestion de planning</source>
-        <target>Web application for schedule management</target>
+        <source>Logiciel de planning en ligne</source>
+        <target>Online scheduling software</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
           <context context-type="linenumber">11,13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectPlanningHybrid" datatype="html">
-        <source> Application hybride web et mobile de gestion de planning </source>
-        <target>Hybrid web and mobile application for schedule management</target>
+        <source>Planning mobile en version hybride</source>
+        <target>Hybrid mobile scheduling app</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
           <context context-type="linenumber">22,25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectPhotovoltaic" datatype="html">
-        <source>Plateforme de vente de produits photovoltaïques</source>
-        <target>Platform for selling photovoltaic products</target>
+        <source>Boutique en ligne de matériel solaire</source>
+        <target>Online store for solar equipment</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
           <context context-type="linenumber">32,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectGasStation" datatype="html">
-        <source>Application mobile de gestion de station-service</source>
-        <target>Mobile application for gas station management</target>
+        <source>Gestion de station-service sur mobile</source>
+        <target>Gas station management on mobile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
           <context context-type="linenumber">41,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectStock" datatype="html">
-        <source>Application web et mobile de gestion de stock</source>
-        <target>Web and mobile stock management application</target>
+        <source>Suivi de stock sur le web et le mobile</source>
+        <target>Stock tracking on web and mobile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
           <context context-type="linenumber">47,49</context>
