@@ -2,7 +2,7 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="fr" datatype="plaintext" original="ng2.template" target-language="en">
     <body>
-      <trans-unit id="pageTitle" datatype="html">
+<trans-unit id="pageTitle" datatype="html">
         <source>Benjamina Randrianasolo (minawk) - Développeur Angular / Fullstack</source>
         <target>Benjamina Randrianasolo (minawk) - Angular / Fullstack Developer</target>
         <context-group purpose="location">
@@ -23,7 +23,7 @@
         <target>Angular / Fullstack Developer</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.ts</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">87</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
@@ -39,8 +39,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="aboutBio" datatype="html">
-        <source> Développeur Angular confirmé, j&apos;accompagne depuis plus de 5 ans des produits web et mobiles hybrides, de la maquette jusqu&apos;à la mise en production, back-end Nest.js et base de données compris. </source>
-        <target>An experienced Angular developer, I&apos;ve spent over 5 years taking web and hybrid mobile products from mockup to production, Nest.js back end and database included.</target>
+        <source> Développeur Angular confirmé, j&apos;accompagne depuis plus de 4 ans des produits web et mobiles hybrides, de la maquette jusqu&apos;à la mise en production, back-end Nest.js et base de données compris. </source>
+        <target>An experienced Angular developer, I&apos;ve spent over 4 years taking web and hybrid mobile products from mockup to production, Nest.js back end and database included.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
           <context context-type="linenumber">7,11</context>
@@ -59,7 +59,7 @@
         <target>Nest.js API contracts shaped around what the front end needs</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">17,19</context>
+          <context context-type="linenumber">17,18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aboutStructure" datatype="html">
@@ -67,7 +67,7 @@
         <target>Data schemas and architectures that can grow without a rewrite</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">20,23</context>
+          <context context-type="linenumber">19,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aboutAi" datatype="html">
@@ -75,7 +75,7 @@
         <target>AI tools used daily to speed things up, with every generated line reviewed</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">24,26</context>
+          <context context-type="linenumber">22,24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="educationTitle" datatype="html">
@@ -83,7 +83,7 @@
         <target>Education</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">29,31</context>
+          <context context-type="linenumber">26,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="educationMaster" datatype="html">
@@ -91,7 +91,7 @@
         <target>Professional master&apos;s degree in software engineering</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">33,34</context>
+          <context context-type="linenumber">30,31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="educationBachelor" datatype="html">
@@ -99,7 +99,7 @@
         <target>Professional bachelor&apos;s degree in software engineering</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">35,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="educationBaccalaureat" datatype="html">
@@ -107,7 +107,7 @@
         <target>Baccalauréat, series C, highest honours</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">43,44</context>
+          <context context-type="linenumber">40,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="languagesTitle" datatype="html">
@@ -115,7 +115,7 @@
         <target>Languages</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">52,54</context>
+          <context context-type="linenumber">49,51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="languageFrench" datatype="html">
@@ -123,7 +123,7 @@
         <target>French</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">56,57</context>
+          <context context-type="linenumber">53,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="languageProfessional" datatype="html">
@@ -131,11 +131,11 @@
         <target>Professional level</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">57,60</context>
+          <context context-type="linenumber">54,57</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">61,64</context>
+          <context context-type="linenumber">58,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="languageEnglish" datatype="html">
@@ -143,7 +143,7 @@
         <target>English</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">60,61</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="languageMalagasy" datatype="html">
@@ -151,7 +151,7 @@
         <target>Malagasy</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">64,65</context>
+          <context context-type="linenumber">61,62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="languageNative" datatype="html">
@@ -159,7 +159,7 @@
         <target>Native language</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/about/about.html</context>
-          <context context-type="linenumber">65,67</context>
+          <context context-type="linenumber">62,64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contactTitle" datatype="html">
@@ -398,28 +398,44 @@
           <context context-type="linenumber">12,15</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="experienceNeoshoreFullstackPlanning" datatype="html">
-        <source> Création, sous Angular, d&apos;une application web de gestion de planning </source>
-        <target>Built a scheduling web app in Angular</target>
+      <trans-unit id="experienceNeoshoreFullstackPro" datatype="html">
+        <source> Développement d&apos;Ooviiz Pro (Angular, RxJS), l&apos;application de planning des employeurs, sur une plateforme qui compte jusqu&apos;à 500 utilisateurs </source>
+        <target>Built Ooviiz Pro (Angular, RxJS), the employer-side scheduling app of a platform serving up to 500 users</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">16,18</context>
+          <context context-type="linenumber">16,19</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="experienceNeoshoreFullstackApi" datatype="html">
-        <source> Architecture en microservices : API REST écrites avec Nest.js et Express.js </source>
-        <target>Split the back end into microservices, with REST APIs written in Nest.js and Express.js</target>
+      <trans-unit id="experienceNeoshoreFullstackAssistant" datatype="html">
+        <source> Assistant IA conversationnel dans Ooviiz Pro : créer un projet, ajouter des missions ou vérifier qui est disponible, simplement en le demandant (« Y a-t-il un cameraman libre lundi prochain ? ») </source>
+        <target>Added a conversational AI assistant to Ooviiz Pro: users create projects, add missions or check who is available just by asking (“Is any cameraman free next Monday?”)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">19,21</context>
+          <context context-type="linenumber">20,24</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="experienceNeoshoreFullstackDatabase" datatype="html">
-        <source> Modélisation des bases MySQL et optimisation des requêtes </source>
-        <target>MySQL database modeling and query optimization</target>
+      <trans-unit id="experienceNeoshoreFullstackServices" datatype="html">
+        <source> Microservices Node.js et Python partagés par Ooviiz et TheGreenShot : serveur temps réel Socket.io, documents PDF et Excel (conversion, fusion, remplissage de modèles), signature électronique de documents, envoi de SMS et d&apos;e-mails, déclarations DPAE et Dimona </source>
+        <target>Node.js and Python microservices shared by Ooviiz and TheGreenShot: a Socket.io real-time server, PDF and Excel documents (conversion, merging, template filling), digital document signing, SMS and email delivery, DPAE and Dimona employment declarations</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">22,24</context>
+          <context context-type="linenumber">25,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFullstackAuth" datatype="html">
+        <source> Bibliothèque d&apos;authentification Keycloak partagée par l&apos;ensemble des services </source>
+        <target>Shared Keycloak authentication library used by every service</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="experienceNeoshoreFullstackTasks" datatype="html">
+        <source> Pour TheGreenShot, maison mère d&apos;Ooviiz : microservice Nest.js qui exécute des tâches IA en parallèle sur plusieurs instances, avec RabbitMQ, Redis, MySQL et AWS S3, suivi de chaque tâche et reprise automatique après un crash </source>
+        <target>For TheGreenShot, Ooviiz&apos;s parent company: a Nest.js microservice that runs AI tasks in parallel across multiple instances, with RabbitMQ, Redis, MySQL and AWS S3, per-task tracking and automatic replay after a crash</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
+          <context context-type="linenumber">32,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFullstackUpgrade" datatype="html">
@@ -427,23 +443,23 @@
         <target>Migrated the codebase from Angular 17 to 21, adopting standalone components, signals and the new control flow</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">25,28</context>
+          <context context-type="linenumber">37,40</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="experienceNeoshoreFullstackPython" datatype="html">
-        <source> Scripts Python d&apos;automatisation et de traitement de données </source>
-        <target>Automated tasks and processed data with Python scripts</target>
+      <trans-unit id="experienceNeoshoreFullstackDatabase" datatype="html">
+        <source> Modélisation des bases MySQL et optimisation des requêtes </source>
+        <target>MySQL database modeling and query optimization</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">29,31</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFullstackReview" datatype="html">
-        <source> Revues de code, correction de bugs et documentation technique </source>
-        <target>Reviewed code, fixed bugs and kept the technical documentation up to date</target>
+        <source> Revues de code, correction de bugs et documentation technique, dans une équipe de 3 développeurs, 1 testeur et 1 chef de projet </source>
+        <target>Reviewed code, fixed bugs and kept the technical documentation up to date in a team of 3 developers, a tester and a project manager</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">32,35</context>
+          <context context-type="linenumber">44,48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceTechnologies" datatype="html">
@@ -451,23 +467,23 @@
         <target>Technologies</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">36,38</context>
+          <context context-type="linenumber">49,51</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">77,79</context>
+          <context context-type="linenumber">95,97</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">109,111</context>
+          <context context-type="linenumber">127,129</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">142,144</context>
+          <context context-type="linenumber">158,160</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">170,172</context>
+          <context context-type="linenumber">184,186</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceReferences" datatype="html">
@@ -475,15 +491,15 @@
         <target>References:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">47,48</context>
+          <context context-type="linenumber">66,67</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">87,88</context>
+          <context context-type="linenumber">105,106</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">119,120</context>
+          <context context-type="linenumber">137,138</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendTitle" datatype="html">
@@ -491,7 +507,7 @@
         <target>Frontend Angular/Ionic developer at Neoshore Madagascar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">55,57</context>
+          <context context-type="linenumber">74,76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendPeriod" datatype="html">
@@ -499,15 +515,15 @@
         <target>June 2023 - January 2024</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">57,60</context>
+          <context context-type="linenumber">76,79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendApp" datatype="html">
-        <source> Version hybride web et mobile de l&apos;outil de planning, avec Ionic et Capacitor </source>
-        <target>Shipped a hybrid web and mobile version of the scheduling tool with Ionic and Capacitor</target>
+        <source> Ooviiz App, l&apos;outil de planning des employés, en version hybride web et mobile avec Ionic et Capacitor </source>
+        <target>Shipped Ooviiz App, the employee-side scheduling tool, as a hybrid web and mobile app with Ionic and Capacitor</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">61,64</context>
+          <context context-type="linenumber">80,83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendMigration" datatype="html">
@@ -515,7 +531,7 @@
         <target>Ported the application from Angular to Vue.js</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">65,67</context>
+          <context context-type="linenumber">84,86</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendUi" datatype="html">
@@ -523,7 +539,7 @@
         <target>Turned mockups into responsive, accessible screens</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">68,70</context>
+          <context context-type="linenumber">87,89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendMobile" datatype="html">
@@ -531,7 +547,7 @@
         <target>Wired up native device features and released the apps on the Android and iOS stores</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">71,74</context>
+          <context context-type="linenumber">90,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceNeoshoreFrontendUpgrade" datatype="html">
@@ -539,7 +555,7 @@
         <target>Updated Angular from 14 to 17</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">74,76</context>
+          <context context-type="linenumber">92,94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferTitle" datatype="html">
@@ -547,7 +563,7 @@
         <target>Fullstack Angular/Nest.js developer at SFER / FINAMAD, Madagascar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">94,96</context>
+          <context context-type="linenumber">112,114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferPeriod" datatype="html">
@@ -555,7 +571,7 @@
         <target>June 2022 - June 2023</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">96,98</context>
+          <context context-type="linenumber">114,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferSales" datatype="html">
@@ -563,7 +579,7 @@
         <target>Developed an online store for photovoltaic products</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">100,102</context>
+          <context context-type="linenumber">118,120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferApi" datatype="html">
@@ -571,7 +587,7 @@
         <target>Wrote the REST APIs in Nest.js</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">120,121</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferDatabase" datatype="html">
@@ -579,7 +595,7 @@
         <target>Structured the data across MySQL and MongoDB</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">103,104</context>
+          <context context-type="linenumber">121,122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceSferDocker" datatype="html">
@@ -587,7 +603,7 @@
         <target>Containerized the development and deployment environments with Docker</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">105,107</context>
+          <context context-type="linenumber">123,125</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceIngenosyaTitle" datatype="html">
@@ -595,7 +611,7 @@
         <target>Mobile Ionic developer intern at Ingenosya, Madagascar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">126,128</context>
+          <context context-type="linenumber">144,146</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceIngenosyaPeriod" datatype="html">
@@ -603,7 +619,7 @@
         <target>November 2019 - April 2020</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">128,130</context>
+          <context context-type="linenumber">146,148</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceIngenosyaApp" datatype="html">
@@ -611,7 +627,7 @@
         <target>Created an Ionic / Angular mobile app for running a gas station</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">132,134</context>
+          <context context-type="linenumber">150,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceIngenosyaNative" datatype="html">
@@ -619,7 +635,7 @@
         <target>Added Cordova plugins to tap into native Android capabilities</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">135,137</context>
+          <context context-type="linenumber">153,155</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceIngenosyaTests" datatype="html">
@@ -627,7 +643,7 @@
         <target>Tested and debugged on Android devices</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">138,141</context>
+          <context context-type="linenumber">155,157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceBionexxTitle" datatype="html">
@@ -635,7 +651,7 @@
         <target>Developer intern at Bionexx Fianarantsoa, Madagascar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">154,156</context>
+          <context context-type="linenumber">170,172</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceBionexxPeriod" datatype="html">
@@ -643,7 +659,7 @@
         <target>November 2018 - January 2019</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">156,158</context>
+          <context context-type="linenumber">172,174</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceBionexxApp" datatype="html">
@@ -651,7 +667,7 @@
         <target>Delivered an inventory tracking tool for web and mobile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">160,162</context>
+          <context context-type="linenumber">176,178</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceBionexxApi" datatype="html">
@@ -659,7 +675,7 @@
         <target>Set up a Node.js API on top of a MySQL database</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">163,165</context>
+          <context context-type="linenumber">178,179</context>
         </context-group>
       </trans-unit>
       <trans-unit id="experienceBionexxUi" datatype="html">
@@ -667,7 +683,7 @@
         <target>Coded the Vue.js web interface and the React Native mobile app</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/experience/experience.html</context>
-          <context context-type="linenumber">166,168</context>
+          <context context-type="linenumber">180,182</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerCredit" datatype="html">
@@ -811,7 +827,7 @@
         <target>Download the resume</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
-          <context context-type="linenumber">35,37</context>
+          <context context-type="linenumber">39,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="heroContact" datatype="html">
@@ -819,7 +835,7 @@
         <target>Contact me</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/hero/hero.html</context>
-          <context context-type="linenumber">37,40</context>
+          <context context-type="linenumber">41,44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectsTitle" datatype="html">
@@ -851,7 +867,7 @@
         <target>Hybrid mobile scheduling app</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
-          <context context-type="linenumber">22,25</context>
+          <context context-type="linenumber">21,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectPhotovoltaic" datatype="html">
@@ -859,7 +875,7 @@
         <target>Online store for solar equipment</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">30,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectGasStation" datatype="html">
@@ -867,7 +883,7 @@
         <target>Gas station management on mobile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
-          <context context-type="linenumber">41,43</context>
+          <context context-type="linenumber">39,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectStock" datatype="html">
@@ -875,7 +891,7 @@
         <target>Stock tracking on web and mobile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
-          <context context-type="linenumber">47,49</context>
+          <context context-type="linenumber">45,47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="projectsPersonalTitle" datatype="html">
@@ -883,7 +899,7 @@
         <target>Personal projects</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/projects/projects.html</context>
-          <context context-type="linenumber">51,53</context>
+          <context context-type="linenumber">49,51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skillsTitle" datatype="html">
@@ -915,7 +931,7 @@
         <target>Advanced</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/skills/skills.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skillsExploring" datatype="html">
@@ -923,7 +939,7 @@
         <target>Exploring and academic</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/blocs/skills/skills.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="languageNavigation" datatype="html">
@@ -931,7 +947,7 @@
         <target>Language</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/language-switch/language-switch.html</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">2,4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skipToContent" datatype="html">

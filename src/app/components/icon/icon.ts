@@ -45,7 +45,12 @@ export type IconName =
   | 'graphql'
   | 'linux'
   | 'uml'
-  | 'agile';
+  | 'agile'
+  | 'rxjs'
+  | 'rabbitmq'
+  | 'keycloak'
+  | 'testing'
+  | 'cloud';
 
 @Component({
   selector: 'app-icon',
