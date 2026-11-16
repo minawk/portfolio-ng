@@ -1,10 +1,9 @@
 <nav class="language-switch" i18n-aria-label="@@languageNavigation" aria-label="Langue">
   <a
-    href="/"
+    href="/?lang=fr"
     hreflang="fr"
     lang="fr"
     [attr.aria-current]="currentLocale === 'fr' ? 'page' : null"
-    (click)="rememberLanguage('fr')"
   >
     FR
     <span>Français</span>
@@ -14,7 +13,6 @@
     hreflang="en"
     lang="en"
     [attr.aria-current]="currentLocale === 'en' ? 'page' : null"
-    (click)="rememberLanguage('en')"
   >
     EN
     <span>English</span>
