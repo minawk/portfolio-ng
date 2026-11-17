@@ -114,7 +114,7 @@
     li {
       padding: 0.3rem 0.75rem;
       border: 1px solid transparent;
-      border-radius: 999px;
+      border-radius: var(--radius-xs);
       background: color-mix(in srgb, var(--color-accent) 14%, transparent);
       color: var(--color-accent);
       font-size: 0.875rem;
@@ -144,12 +144,14 @@
     gap: 0.5rem;
     min-height: 2.75rem;
     padding: 0.5rem 1.25rem;
-    border-radius: 999px;
+    border-radius: var(--radius-sm);
     font-weight: 700;
     text-decoration: none;
     transition:
       background-color 0.15s ease,
-      border-color 0.15s ease;
+      border-color 0.15s ease,
+      color 0.15s ease,
+      box-shadow 0.2s ease;
 
     app-icon {
       width: 1.15rem;
@@ -160,9 +162,18 @@
   .primary {
     background: var(--color-accent);
     color: var(--color-accent-contrast);
+    box-shadow: var(--elevation-1);
 
     &:hover {
-      background: color-mix(in srgb, var(--color-accent) 85%, black);
+      background: var(--color-secondary);
+      color: var(--color-secondary-contrast);
+      box-shadow: var(--elevation-2);
+    }
+
+    &:active {
+      background: color-mix(in srgb, var(--color-secondary) 75%, black);
+      color: var(--color-secondary-contrast);
+      box-shadow: var(--elevation-1);
     }
   }
 

@@ -100,7 +100,7 @@
     li {
       padding: 0.2rem 0.6rem;
       border: 1px solid transparent;
-      border-radius: 999px;
+      border-radius: var(--radius-xs);
       background: color-mix(in srgb, var(--color-accent) 14%, transparent);
       color: var(--color-accent);
       font-size: 0.8125rem;

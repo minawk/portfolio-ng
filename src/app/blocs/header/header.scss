@@ -47,7 +47,7 @@
     height: 2.75rem;
     padding: 0;
     border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
-    border-radius: 999px;
+    border-radius: var(--radius-sm);
     background: var(--color-surface);
     color: var(--color-text);
     cursor: pointer;
@@ -77,11 +77,11 @@
     margin: 0;
     padding: 0.75rem;
     overflow: auto;
-    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
-    border-radius: 1rem;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-md);
     background: var(--color-surface);
     color: var(--color-text);
-    box-shadow: 0 16px 40px color-mix(in srgb, var(--color-text) 14%, transparent);
+    box-shadow: var(--elevation-4);
 
     &:popover-open {
       display: flex;
@@ -94,7 +94,7 @@
       align-items: center;
       min-height: 2.75rem;
       padding: 0.35rem 0.85rem;
-      border-radius: 0.75rem;
+      border-radius: var(--radius-sm);
       color: var(--color-text);
       font-weight: 600;
       text-decoration: none;
@@ -134,7 +134,7 @@
       a {
         min-height: 2.75rem;
         padding: 0.25rem 0.65rem;
-        border-radius: 999px;
+        border-radius: var(--radius-sm);
 
         &:hover,
         &[aria-current='true'] {

@@ -28,10 +28,10 @@
     gap: 0.85rem;
     width: 100%;
     padding: 1.25rem;
-    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
-    border-radius: 1rem;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-md);
     background: var(--color-surface);
-    box-shadow: 0 16px 40px color-mix(in srgb, var(--color-text) 6%, transparent);
+    box-shadow: var(--elevation-1);
 
     @include screen(768px) {
       padding: 1.5rem;

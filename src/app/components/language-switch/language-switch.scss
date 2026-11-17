@@ -10,7 +10,7 @@
     justify-content: center;
     min-width: 2.75rem;
     min-height: 2.75rem;
-    border-radius: 999px;
+    border-radius: var(--radius-sm);
     color: var(--color-text);
     font-weight: 700;
     text-decoration: none;

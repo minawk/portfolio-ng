@@ -40,9 +40,15 @@
       flex-direction: column;
       gap: 0.5rem;
       padding: 1.25rem;
-      border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
-      border-radius: 1rem;
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
       background: var(--color-surface);
+      box-shadow: var(--elevation-1);
+      transition: box-shadow 0.2s ease;
+
+      &:hover {
+        box-shadow: var(--elevation-3);
+      }
     }
 
     p {
@@ -86,13 +92,19 @@
 
       &:hover {
         color: var(--color-accent);
+
+        img {
+          box-shadow: var(--elevation-3);
+        }
       }
     }
 
     img {
       width: 100%;
       height: auto;
-      border-radius: 1rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--elevation-1);
+      transition: box-shadow 0.2s ease;
     }
   }
 }

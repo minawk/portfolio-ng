@@ -6,7 +6,7 @@
   height: 2.75rem;
   padding: 0;
   border: 1px solid color-mix(in srgb, var(--color-text) 16%, transparent);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background: var(--color-surface);
   color: var(--color-text);
   cursor: pointer;
