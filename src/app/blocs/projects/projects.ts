@@ -11,6 +11,13 @@ import { Icon } from '../../components/icon/icon';
 export class Projects {
   protected readonly personalProjects = [
     {
+      title: 'PDF Viewer NG',
+      href: 'https://minawk.github.io/pdf-viewer-ng/',
+      image: 'projects/pdf-viewer-ng.webp',
+      width: 960,
+      height: 470,
+    },
+    {
       title: 'Gantt RO',
       href: 'https://gantt-ro.netlify.app',
       image: 'projects/gantt-ro.webp',
